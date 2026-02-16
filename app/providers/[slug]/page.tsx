@@ -521,7 +521,7 @@ export default async function ProviderPage({ params }: Props) {
                   href={`/go/${provider.slug}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[52px] rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-base sm:text-lg font-bold px-6 py-3.5 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[52px] rounded-xl bg-blue-600 hover:bg-blue-700 text-white hover:text-white text-base sm:text-lg font-bold px-6 py-3.5 transition-colors"
                 >
                   Перейти на сайт провайдера 🌐
                 </a>
