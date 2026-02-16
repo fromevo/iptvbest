@@ -10,7 +10,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#f8fafc"
+  themeColor: "#f1f5f9"
 };
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function RootLayout({
 
   return (
     <html lang="ru">
-      <body className="min-h-screen bg-gradient-to-b from-slate-100 via-slate-50 to-white text-slate-800 text-base">
+      <body className="min-h-screen bg-[#f1f5f9] text-slate-900 text-base">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -103,8 +103,8 @@ ym(106855606, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer:
           <div className="container-page">{children}</div>
         </main>
 
-        <footer className="border-t-2 border-brand-100 bg-gradient-to-r from-white via-slate-50 to-white py-6 sm:py-8">
-          <div className="container-page text-sm sm:text-base text-slate-600 flex flex-col sm:flex-row gap-3 sm:gap-6 justify-between items-center sm:items-start">
+        <footer className="border-t border-slate-200 bg-white py-6 sm:py-8">
+          <div className="container-page text-sm text-slate-600 flex flex-col sm:flex-row gap-3 sm:gap-6 justify-between items-center sm:items-start">
             <div className="font-medium">
               © {new Date().getFullYear()} IPTV Best. Все права защищены.
             </div>

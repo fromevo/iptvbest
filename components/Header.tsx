@@ -25,12 +25,12 @@ export function Header() {
   };
 
   return (
-    <div className="border-b-2 border-brand-100 bg-gradient-to-r from-white via-brand-50/30 to-white shadow-sm">
+    <div className="border-b border-slate-200 bg-white">
       <header className="container-page flex items-center justify-between py-4 sm:py-5">
         <div className="flex items-center gap-3 sm:gap-4 min-w-0">
           <span className="text-3xl sm:text-4xl shrink-0" aria-hidden>📺</span>
           <div className="min-w-0">
-            <div className="text-lg sm:text-xl font-bold tracking-tight truncate text-slate-800">
+            <div className="text-lg sm:text-xl font-bold tracking-tight truncate text-slate-900">
               IPTV Best
             </div>
             <div className="text-xs sm:text-sm text-slate-500">
@@ -41,14 +41,14 @@ export function Header() {
 
         {/* Desktop nav */}
         <nav
-          className="hidden sm:flex items-center gap-4 lg:gap-6 text-sm text-slate-600"
+          className="hidden sm:flex items-center gap-4 lg:gap-6 text-sm text-slate-600 font-medium"
           aria-label="Основная навигация"
         >
           {navLinks.map(({ href, label }) => (
             <a
               key={href}
               href={href}
-              className="hover:text-brand-600 font-medium py-2 min-h-[48px] inline-flex items-center"
+              className="text-slate-700 hover:text-brand-600 py-2 min-h-[48px] inline-flex items-center transition-colors duration-150"
             >
               {label}
             </a>
@@ -67,7 +67,7 @@ export function Header() {
             ref={menuButtonRef}
             type="button"
             onClick={() => setMobileOpen((o) => !o)}
-            className="p-3 min-h-[48px] min-w-[48px] inline-flex items-center justify-center rounded-xl text-slate-600 hover:text-brand-600 hover:bg-brand-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white"
+            className="p-3 min-h-[48px] min-w-[48px] inline-flex items-center justify-center rounded-lg text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white"
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
             aria-label={mobileOpen ? "Закрыть меню" : "Открыть меню"}
@@ -93,7 +93,7 @@ export function Header() {
         aria-hidden={!mobileOpen}
       >
         <nav
-          className="container-page pb-4 pt-1 border-t border-slate-200 bg-slate-50"
+          className="container-page pb-4 pt-1 border-t border-slate-200 bg-white"
           aria-label="Мобильное меню"
         >
           <ul className="flex flex-col gap-0">

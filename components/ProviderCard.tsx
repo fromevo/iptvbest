@@ -41,19 +41,19 @@ export function ProviderCard({
   return (
     <article className="card p-5 sm:p-6 flex flex-col sm:flex-row gap-5 sm:gap-6">
       <div className="flex sm:flex-col items-start gap-3 w-full sm:w-52">
-        <div className="flex items-center justify-center size-14 sm:size-16 rounded-2xl bg-gradient-to-br from-brand-50 to-brand-100 border-2 border-brand-200 text-3xl">
+        <div className="flex items-center justify-center size-14 sm:size-16 rounded-xl bg-slate-50 border border-slate-200 text-3xl">
           {provider.logoEmoji}
         </div>
           <div className="flex flex-col gap-1.5 flex-1">
           <div className="inline-flex items-center gap-2 text-sm font-medium text-slate-600">
-            <span className="px-2.5 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700">
+            <span className="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200 text-slate-700">
               #{provider.position} в рейтинге
             </span>
-            <span className="inline-flex items-center gap-1 text-amber-600">
+            <span className="inline-flex items-center gap-1 text-amber-700">
               ⭐ {provider.rating.toFixed(1)}
             </span>
           </div>
-          <h2 className="text-lg sm:text-xl font-bold tracking-tight text-slate-800">
+          <h2 className="text-lg sm:text-xl font-bold tracking-tight text-slate-900">
             {provider.name}
           </h2>
           <div className="text-sm text-slate-500">
@@ -84,7 +84,7 @@ export function ProviderCard({
           {provider.tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 font-medium"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200 text-slate-700"
             >
               <span>{tagEmojis[tag] ?? "✅"}</span>
               <span>{tagLabels[tag] ?? tag}</span>
@@ -139,14 +139,14 @@ export function ProviderCard({
                 href={`/go/${provider.slug}`}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-full border-2 border-brand-300 bg-brand-50 text-brand-700 px-4 py-2.5 min-h-[48px] sm:min-h-0 sm:py-2 text-sm font-medium hover:bg-brand-100 hover:border-brand-500 transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm font-medium hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700 transition-colors"
               >
                 Перейти на сайт 🔗
               </a>
             )}
             <Link
               href={`/providers/${provider.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-full bg-brand-500 hover:bg-brand-600 text-white font-semibold px-4 py-2.5 min-h-[48px] sm:min-h-0 sm:py-2 text-sm shadow-lg shadow-brand-500/40 transition-colors"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm shadow-sm transition-colors"
             >
               Смотреть обзор 🔍
             </Link>

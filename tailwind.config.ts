@@ -11,20 +11,19 @@ const config: Config = {
         brand: {
           50: "#eff6ff",
           100: "#dbeafe",
-          200: "#93c5fd",
-          300: "#60a5fa",
+          200: "#bfdbfe",
+          300: "#93c5fd",
           400: "#3b82f6",
-          500: "#1d4ed8",
-          600: "#1e40af",
-          700: "#1e3a8a",
+          500: "#2563eb",
+          600: "#1d4ed8",
+          700: "#1e40af",
           800: "#1e3a8a",
-          900: "#172554"
-        },
-        accent: {
-          emerald: "#059669",
-          amber: "#d97706",
-          violet: "#7c3aed"
+          900: "#1e3a8a"
         }
+      },
+      boxShadow: {
+        "soft": "0 2px 8px -2px rgb(0 0 0 / 0.08), 0 4px 12px -4px rgb(0 0 0 / 0.06)",
+        "card": "0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06)"
       },
       fontSize: {
         "base": ["1.125rem", { lineHeight: "1.65" }],
