@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { providers, getProviderBySlug } from "../../data/providers";
 
 interface Props {
-  searchParams: { p?: string };
+  searchParams: Promise<{ p?: string }>;
 }
 
 export const metadata: Metadata = {
@@ -14,8 +14,9 @@ export const metadata: Metadata = {
   }
 };
 
-export default function ComparePage({ searchParams }: Props) {
-  const slugsParam = searchParams.p ?? "";
+export default async function ComparePage({ searchParams }: Props) {
+  const params = await searchParams;
+  const slugsParam = params.p ?? "";
   const slugs = slugsParam
     .split(",")
     .map((s) => s.trim())

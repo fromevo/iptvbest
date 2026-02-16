@@ -22,7 +22,7 @@ export default async function HomePage({
 }) {
   const params = await searchParams;
   const initialQuery = params.q ?? "";
-  const initialTags = (params.tags?.split(",").filter((t) => VALID_TAGS.includes(t as FeatureTag)) ?? []) as FeatureTag[];
+  const initialTags = (params.tags?.split(",").filter((t) => (VALID_TAGS as readonly string[]).includes(t)) ?? []) as FeatureTag[];
 
   return (
     <div className="space-y-6 sm:space-y-8">
