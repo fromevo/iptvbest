@@ -33,7 +33,7 @@ export default function BlogPage() {
       <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
         📚 Гайды по выбору IPTV
       </h1>
-      <p className="text-sm sm:text-base text-slate-300">
+      <p className="text-sm sm:text-base text-slate-600">
         В этом разделе будут публиковаться подробные статьи: как выбрать IPTV
         провайдера, чем отличаются плейлисты, как настроить IPTV на Smart TV,
         приставках и смартфонах.
@@ -51,7 +51,7 @@ export default function BlogPage() {
                 </span>
               </div>
               <div className="mb-2 flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center rounded-full bg-slate-900 border border-slate-800 px-2 py-0.5 text-[11px] sm:text-xs text-slate-300">
+                <span className="inline-flex items-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5 text-[11px] sm:text-xs text-slate-600">
                   #{post.tag}
                 </span>
                 {post.publishedDate && (
@@ -60,7 +60,7 @@ export default function BlogPage() {
                   </time>
                 )}
               </div>
-              <p className="text-xs sm:text-sm text-slate-200">{post.summary}</p>
+              <p className="text-xs sm:text-sm text-slate-600">{post.summary}</p>
             </article>
           </Link>
         ))}

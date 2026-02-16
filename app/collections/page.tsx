@@ -55,7 +55,7 @@ export default function CollectionsPage() {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
           🧩 Подборки IPTV провайдеров
         </h1>
-        <p className="text-sm sm:text-base text-slate-300 max-w-2xl">
+        <p className="text-sm sm:text-base text-slate-600 max-w-2xl">
           Вместо того чтобы изучать весь список, выберите готовую подборку под
           вашу задачу: спорт, семья, 4K-контент или экономия. Все варианты
           основаны на нашем рейтинге и характеристиках провайдеров.
@@ -66,7 +66,7 @@ export default function CollectionsPage() {
         <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
           🏆 Для любителей спорта
         </h2>
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-600">
           Провайдеры с сильным спортивным пакетом и хорошей поддержкой HD/4K —
           подойдут для просмотра футбола, хоккея и других трансляций.
         </p>
@@ -81,7 +81,7 @@ export default function CollectionsPage() {
         <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
           👨‍👩‍👧‍👦 Для семьи и нескольких устройств
         </h2>
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-600">
           Сервисы с мультирумом и архивом передач — удобно, когда каждый в семье
           смотрит ТВ в своё время и на своём устройстве.
         </p>
@@ -96,7 +96,7 @@ export default function CollectionsPage() {
         <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
           🖥️ Для 4K и максимального качества
         </h2>
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-600">
           Подборка провайдеров с 4K-каналами и акцентом на качество картинки —
           если у вас современный большой телевизор и хороший интернет.
         </p>
@@ -111,7 +111,7 @@ export default function CollectionsPage() {
         <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
           💸 Бюджетные варианты
         </h2>
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-600">
           Провайдеры с минимальной ценой за месяц, у которых при этом сохранён
           базовый набор каналов и приемлемое качество трансляций.
         </p>

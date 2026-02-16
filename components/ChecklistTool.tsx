@@ -51,7 +51,7 @@ export function ChecklistTool() {
     <div className="space-y-6">
       <div className="card p-4 sm:p-5 space-y-4 print:border print:shadow-none print:bg-white print:text-slate-900">
         <div className="flex flex-wrap items-center justify-between gap-3 print:flex-none">
-          <p className="text-sm text-slate-300">
+          <p className="text-sm text-slate-600">
             Отмечено: {doneCount} из {allKeys.length}
           </p>
           <button
@@ -81,13 +81,13 @@ export function ChecklistTool() {
                           type="checkbox"
                           checked={isChecked}
                           onChange={() => toggle(key)}
-                          className="rounded border-slate-600 bg-slate-800 text-brand-500 focus:ring-brand-500/70 print:accent-slate-800"
+                          className="rounded border-slate-300 bg-slate-100 text-brand-500 focus:ring-brand-500/70 print:accent-slate-800"
                         />
                         <span
                           className={
                             isChecked
                               ? "text-slate-400 line-through"
-                              : "text-slate-200 group-hover:text-white"
+                              : "text-slate-600 group-hover:text-slate-800"
                           }
                         >
                           {item}
@@ -103,7 +103,7 @@ export function ChecklistTool() {
       </div>
 
       <section
-        className="card p-4 sm:p-5 border-dashed border-slate-600 print:border print:border-slate-400 print:bg-white print:text-slate-900"
+        className="card p-4 sm:p-5 border-dashed border-slate-300 print:border print:border-slate-400 print:bg-white print:text-slate-900"
         aria-label="Итоговый чек-лист для печати"
       >
         <h2 className="text-lg font-semibold mb-3 print:text-black">

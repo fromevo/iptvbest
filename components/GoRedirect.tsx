@@ -42,7 +42,7 @@ export function GoRedirect({ slug }: { slug: string }) {
   if (status === "error") {
     return (
       <div className="min-h-[40vh] flex flex-col items-center justify-center text-center px-4">
-        <p className="text-slate-300 mb-4">Ссылка не найдена или недоступна.</p>
+        <p className="text-slate-600 mb-4">Ссылка не найдена или недоступна.</p>
         <Link href="/" className="text-brand-400 hover:text-brand-300">
           ← На главную
         </Link>
@@ -52,7 +52,7 @@ export function GoRedirect({ slug }: { slug: string }) {
 
   return (
     <div className="min-h-[40vh] flex flex-col items-center justify-center text-center px-4">
-      <p className="text-slate-300 animate-pulse">Переход на сайт провайдера…</p>
+      <p className="text-slate-600 animate-pulse">Переход на сайт провайдера…</p>
       <p className="text-slate-500 text-sm mt-2">
         Если переход не произошёл,{" "}
         <a href="/" className="underline hover:text-slate-400">

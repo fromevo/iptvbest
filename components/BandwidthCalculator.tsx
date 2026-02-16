@@ -23,7 +23,7 @@ export function BandwidthCalculator() {
         <h2 className="text-lg font-semibold tracking-tight flex items-center gap-2">
           📶 Калькулятор скорости для IPTV
         </h2>
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-slate-600">
           Оцените, какой тариф интернета нужен для комфортного просмотра IPTV на
           ваших устройствах.
         </p>
@@ -31,7 +31,7 @@ export function BandwidthCalculator() {
 
       <div className="grid gap-3 sm:grid-cols-3 text-xs sm:text-sm">
         <div className="space-y-1">
-          <label className="text-slate-300">
+          <label className="text-slate-600">
             Количество устройств, которые смотрят одновременно
           </label>
           <input
@@ -44,17 +44,17 @@ export function BandwidthCalculator() {
                 Math.min(10, Math.max(1, Number(e.target.value) || 1))
               )
             }
-            className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+            className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
           />
         </div>
         <div className="space-y-1">
-          <label className="text-slate-300">
+          <label className="text-slate-600">
             Максимальное качество, которое вы планируете смотреть
           </label>
           <select
             value={quality}
             onChange={(e) => setQuality(e.target.value as Quality)}
-            className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+            className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
           >
             <option value="sd">SD (до 720p)</option>
             <option value="hd">HD (1080p)</option>
@@ -62,7 +62,7 @@ export function BandwidthCalculator() {
           </select>
         </div>
         <div className="space-y-1">
-          <label className="text-slate-300">
+          <label className="text-slate-600">
             Ваш текущий тариф (Мбит/с), если знаете
           </label>
           <input
@@ -70,7 +70,7 @@ export function BandwidthCalculator() {
             value={currentSpeed}
             onChange={(e) => setCurrentSpeed(e.target.value)}
             placeholder="Например: 50"
-            className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+            className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
           />
         </div>
       </div>
@@ -99,7 +99,7 @@ export function BandwidthCalculator() {
         )}
       </div>
 
-      <ul className="list-disc list-inside text-xs sm:text-sm text-slate-300 space-y-1">
+      <ul className="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1">
         <li>
           Для 4K‑каналов критична не только скорость, но и стабильность — лучше
           подключать телевизор к роутеру по кабелю.

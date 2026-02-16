@@ -16,11 +16,11 @@ export function Breadcrumbs({ items }: Props) {
         <span key={i} className="flex items-center gap-2">
           {i > 0 && <span aria-hidden className="text-slate-600">/</span>}
           {item.href ? (
-            <Link href={item.href} className="hover:text-slate-200 transition-colors">
+            <Link href={item.href} className="hover:text-slate-600 transition-colors">
               {item.label}
             </Link>
           ) : (
-            <span className="text-slate-200">{item.label}</span>
+            <span className="text-slate-600">{item.label}</span>
           )}
         </span>
       ))}

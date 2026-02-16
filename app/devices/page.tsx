@@ -62,27 +62,22 @@ const DEVICE_BLOCKS = [
 
 export default function DevicesPage() {
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
-      <header className="border-b border-slate-700/50 bg-slate-800/30">
-        <div className="container mx-auto px-4 py-6">
-          <nav className="mb-4">
-            <Link
-              href="/"
-              className="text-sm text-slate-400 hover:text-white transition-colors"
-            >
-              ← На главную
-            </Link>
-          </nav>
-          <h1 className="text-2xl sm:text-3xl font-bold">
-            IPTV для разных устройств
-          </h1>
-          <p className="mt-2 text-slate-300 text-sm sm:text-base max-w-2xl">
-            Smart TV, приставки, смартфоны и ПК: в каждом блоке — ссылки на статьи блога и подходящих провайдеров.
-          </p>
-        </div>
+    <div className="space-y-6 sm:space-y-8">
+      <header className="space-y-2">
+        <nav className="flex items-center gap-2 text-sm">
+          <Link href="/" className="text-slate-500 hover:text-slate-800 transition-colors">
+            ← На главную
+          </Link>
+        </nav>
+        <h1 className="text-2xl sm:text-3xl font-bold text-slate-800">
+          IPTV для разных устройств
+        </h1>
+        <p className="mt-2 text-slate-600 text-sm sm:text-base max-w-2xl">
+          Smart TV, приставки, смартфоны и ПК: в каждом блоке — ссылки на статьи блога и подходящих провайдеров.
+        </p>
       </header>
 
-      <main className="container mx-auto px-4 py-6 sm:py-8">
+      <div>
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {DEVICE_BLOCKS.map((block) => {
             const provs = block.providerSlugs
@@ -100,13 +95,13 @@ export default function DevicesPage() {
                   </span>
                   <div>
                     <h2 className="text-lg font-semibold">{block.title}</h2>
-                    <p className="text-sm text-slate-400">{block.subtitle}</p>
+                    <p className="text-sm text-slate-500">{block.subtitle}</p>
                   </div>
                 </div>
-                <p className="text-sm text-slate-300">{block.description}</p>
+                <p className="text-sm text-slate-600">{block.description}</p>
 
                 <div>
-                  <h3 className="text-sm font-medium text-slate-300 mb-2">
+                  <h3 className="text-sm font-medium text-slate-600 mb-2">
                     Статьи в блоге
                   </h3>
                   <ul className="flex flex-wrap gap-2">
@@ -114,7 +109,7 @@ export default function DevicesPage() {
                       <li key={slug}>
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-xs sm:text-sm text-brand-300 hover:text-brand-200 underline decoration-dotted"
+                          className="text-xs sm:text-sm text-brand-600 hover:text-brand-500 underline decoration-dotted"
                         >
                           {slug.replace(/-/g, " ")}
                         </Link>
@@ -124,7 +119,7 @@ export default function DevicesPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-medium text-slate-300 mb-2">
+                  <h3 className="text-sm font-medium text-slate-600 mb-2">
                     Подходящие провайдеры
                   </h3>
                   <ul className="flex flex-wrap gap-2">
@@ -132,7 +127,7 @@ export default function DevicesPage() {
                       <li key={p!.slug}>
                         <Link
                           href={`/providers/${p!.slug}`}
-                          className="text-xs sm:text-sm text-brand-300 hover:text-brand-200"
+                          className="text-xs sm:text-sm text-brand-600 hover:text-brand-500"
                         >
                           {p!.logoEmoji} {p!.name}
                         </Link>
@@ -144,16 +139,16 @@ export default function DevicesPage() {
             );
           })}
         </div>
-        <p className="mt-6 text-slate-400 text-sm">
-          <Link href="/blog" className="underline hover:text-white">
+        <p className="mt-6 text-slate-500 text-sm">
+          <Link href="/blog" className="underline hover:text-slate-800">
             Все статьи блога
           </Link>
           {" · "}
-          <Link href="/providers" className="underline hover:text-white">
+          <Link href="/providers" className="underline hover:text-slate-800">
             Список провайдеров
           </Link>
         </p>
-      </main>
+      </div>
     </div>
   );
 }

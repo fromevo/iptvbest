@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --bg-main: #020617;
-  --bg-card: #020617;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
 }
 
 body {
-  @apply bg-slate-950 text-slate-50 antialiased;
+  @apply bg-slate-50 text-slate-800 antialiased;
   overflow-x: hidden;
 }
 
 a {
-  @apply text-brand-400 hover:text-brand-300 transition-colors;
+  @apply text-brand-600 hover:text-brand-500 transition-colors;
 }
 
 .container-page {
@@ -21,7 +21,7 @@ a {
 }
 
 .card {
-  @apply rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/80 to-slate-950/80 shadow-lg shadow-black/40 backdrop-blur-sm;
+  @apply rounded-2xl border border-slate-200 bg-white shadow-md shadow-slate-200/60;
 }
 
 /* Mobile-friendly: избегаем авто-зума iOS при фокусе в поле ввода */

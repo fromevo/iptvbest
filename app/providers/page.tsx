@@ -32,19 +32,19 @@ export default function ProvidersIndexPage() {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
           📡 Все IPTV провайдеры
         </h1>
-        <p className="text-sm sm:text-base text-slate-300">
+        <p className="text-sm sm:text-base text-slate-600">
           Алфавитный список всех провайдеров, представленных в рейтинге IPTV
           Best. Выберите нужного провайдера, чтобы открыть подробный обзор.
         </p>
       </section>
 
       <div className="max-w-3xl space-y-4">
-        <div className="flex flex-wrap gap-2 text-xs sm:text-sm text-slate-300">
+        <div className="flex flex-wrap gap-2 text-xs sm:text-sm text-slate-600">
           {letters.map((letter) => (
             <a
               key={letter}
               href={`#letter-${letter}`}
-              className="rounded-full border border-slate-700 px-2 py-0.5 hover:border-brand-400 hover:text-brand-200"
+              className="rounded-full border border-slate-300 px-2 py-0.5 hover:border-brand-500 hover:text-brand-600"
             >
               {letter}
             </a>
@@ -54,30 +54,30 @@ export default function ProvidersIndexPage() {
         <div className="space-y-5">
           {letters.map((letter) => (
             <section key={letter} id={`letter-${letter}`} className="space-y-2">
-              <h2 className="text-lg sm:text-xl font-semibold tracking-tight text-slate-100">
+              <h2 className="text-lg sm:text-xl font-semibold tracking-tight text-slate-800">
                 {letter}
               </h2>
               <div className="card p-3 sm:p-4 space-y-1">
                 {grouped[letter].map((p) => (
                   <div
                     key={p.slug}
-                    className="flex items-center justify-between gap-2 text-xs sm:text-sm text-slate-200 py-1 border-b border-slate-800 last:border-b-0"
+                    className="flex items-center justify-between gap-2 text-xs sm:text-sm text-slate-600 py-1 border-b border-slate-200 last:border-b-0"
                   >
                     <div className="flex items-center gap-2">
                       <span className="text-lg">{p.logoEmoji}</span>
                       <div className="flex flex-col">
                         <Link
                           href={`/providers/${p.slug}`}
-                          className="hover:text-brand-300"
+                          className="hover:text-brand-600"
                         >
                           {p.name}
                         </Link>
-                        <span className="text-[11px] text-slate-400">
+                        <span className="text-[11px] text-slate-500">
                           #{p.position} в рейтинге · ⭐ {p.rating.toFixed(1)}
                         </span>
                       </div>
                     </div>
-                    <span className="text-[11px] text-slate-400">
+                    <span className="text-[11px] text-slate-500">
                       {p.channelsCount} каналов
                     </span>
                   </div>

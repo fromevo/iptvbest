@@ -24,7 +24,7 @@ export default function SavingsPage() {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
           💰 Калькулятор экономии: кабель/спутник vs IPTV
         </h1>
-        <p className="text-sm sm:text-base text-slate-300">
+        <p className="text-sm sm:text-base text-slate-600">
           Введите, сколько вы платите за кабельное или спутниковое ТВ в месяц, и выберите IPTV‑провайдера — увидите разницу за год.
         </p>
       </header>

@@ -46,7 +46,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) {
     return (
       <div className="space-y-4 max-w-3xl">
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-600">
           Статья не найдена. Вернитесь, пожалуйста, к списку материалов блога.
         </p>
         <Link href="/blog" className="text-sm text-brand-400 hover:text-brand-300">
@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
       <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Блог", href: "/blog" }, { label: post.title }]} />
       <header className="space-y-3">
         <div className="inline-flex flex-wrap items-center gap-2 text-[11px] sm:text-xs text-slate-400">
-          <span className="inline-flex items-center rounded-full bg-slate-900 border border-slate-800 px-2 py-0.5">
+          <span className="inline-flex items-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5">
             #{post.tag}
           </span>
           <span>⏱ {post.readingTime}</span>
@@ -86,9 +86,9 @@ export default async function BlogPostPage({ params }: Props) {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
           {post.title}
         </h1>
-        <p className="text-sm sm:text-base text-slate-300">{post.summary}</p>
+        <p className="text-sm sm:text-base text-slate-600">{post.summary}</p>
       </header>
-      <article className="space-y-5 sm:space-y-6 text-sm sm:text-base text-slate-200 leading-relaxed">
+      <article className="space-y-5 sm:space-y-6 text-sm sm:text-base text-slate-600 leading-relaxed">
         {post.sections.map((section) => (
           <section key={section.heading} className="space-y-2">
             <h2 className="text-base sm:text-lg font-semibold text-slate-50">

@@ -70,19 +70,19 @@ function SearchContent() {
           onChange={(e) => setQuery(e.target.value)}
           onBlur={() => updateUrl(query)}
           placeholder="Провайдеры и статьи…"
-          className="flex-1 rounded-xl border border-slate-700 bg-slate-800/50 px-4 py-2.5 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+          className="flex-1 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-slate-800 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/50"
           aria-label="Поиск"
         />
         <button
           type="submit"
-          className="rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-medium px-4 py-2.5 transition-colors"
+          className="rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-medium px-4 py-2.5 transition-colors"
         >
           Искать
         </button>
       </form>
 
       {!hasQuery && (
-        <p className="text-slate-400 text-sm">
+        <p className="text-slate-500 text-sm">
           Введите минимум 2 символа для поиска по провайдерам и статьям блога.
         </p>
       )}
@@ -91,7 +91,7 @@ function SearchContent() {
         <div className="space-y-6">
           {providerResults.length > 0 && (
             <section>
-              <h2 className="text-lg font-semibold text-slate-200 mb-3">
+              <h2 className="text-lg font-semibold text-slate-800 mb-3">
                 Провайдеры ({providerResults.length})
               </h2>
               <ul className="space-y-2">
@@ -103,8 +103,8 @@ function SearchContent() {
                     >
                       <span className="text-2xl">{p.logoEmoji}</span>
                       <div>
-                        <div className="font-medium text-slate-100">{p.name}</div>
-                        <div className="text-xs text-slate-400">
+                        <div className="font-medium text-slate-800">{p.name}</div>
+                        <div className="text-xs text-slate-500">
                           {p.channelsCount} · от ${p.monthlyFromUsd}/мес
                         </div>
                       </div>
@@ -117,7 +117,7 @@ function SearchContent() {
 
           {blogResults.length > 0 && (
             <section>
-              <h2 className="text-lg font-semibold text-slate-200 mb-3">
+              <h2 className="text-lg font-semibold text-slate-800 mb-3">
                 Статьи блога ({blogResults.length})
               </h2>
               <ul className="space-y-2">
@@ -127,8 +127,8 @@ function SearchContent() {
                       href={`/blog/${post.slug}`}
                       className="card p-3 sm:p-4 block hover:border-brand-500/50 transition-colors"
                     >
-                      <div className="font-medium text-slate-100">{post.title}</div>
-                      <p className="text-xs text-slate-400 mt-0.5 line-clamp-1">
+                      <div className="font-medium text-slate-800">{post.title}</div>
+                      <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">
                         {post.summary}
                       </p>
                     </Link>
@@ -139,7 +139,7 @@ function SearchContent() {
           )}
 
           {hasQuery && providerResults.length === 0 && blogResults.length === 0 && (
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               По запросу «{query}» ничего не найдено. Попробуйте другие слова.
             </p>
           )}
@@ -151,7 +151,7 @@ function SearchContent() {
 
 export default function SearchPage() {
   return (
-    <Suspense fallback={<div className="text-slate-400">Загрузка…</div>}>
+    <Suspense fallback={<div className="text-slate-500">Загрузка…</div>}>
       <SearchContent />
     </Suspense>
   );

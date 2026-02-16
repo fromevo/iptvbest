@@ -10,7 +10,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#020617"
+  themeColor: "#f8fafc"
 };
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function RootLayout({
 
   return (
     <html lang="ru">
-      <body className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-slate-50">
+      <body className="min-h-screen bg-gradient-to-b from-slate-100 via-slate-50 to-white text-slate-800">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -103,25 +103,25 @@ ym(106855606, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer:
           <div className="container-page">{children}</div>
         </main>
 
-        <footer className="border-t border-slate-800/80 bg-slate-950/80">
-          <div className="container-page py-5 sm:py-6 text-xs sm:text-sm text-slate-400 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between">
+        <footer className="border-t border-slate-200 bg-white/80">
+          <div className="container-page py-5 sm:py-6 text-xs sm:text-sm text-slate-500 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between">
             <div>
               © {new Date().getFullYear()} IPTV Best. Все права защищены.
             </div>
             <div className="flex flex-wrap gap-3">
-              <a href="/devices" className="hover:text-slate-200">
+              <a href="/devices" className="hover:text-slate-800">
                 Устройства
               </a>
-              <a href="/apps" className="hover:text-slate-200">
+              <a href="/apps" className="hover:text-slate-800">
                 Приложения
               </a>
-              <a href="/about" className="hover:text-slate-200">
+              <a href="/about" className="hover:text-slate-800">
                 О проекте
               </a>
-              <a href="/privacy" className="hover:text-slate-200">
+              <a href="/privacy" className="hover:text-slate-800">
                 Политика конфиденциальности
               </a>
-              <a href="/contact" className="hover:text-slate-200">
+              <a href="/contact" className="hover:text-slate-800">
                 Контакты
               </a>
             </div>

@@ -72,18 +72,18 @@ export function ProviderWizard() {
         <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
           🎛 Подбор IPTV под ваши задачи
         </h2>
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-slate-600">
           Ответьте на несколько вопросов — мы предложим 3–5 подходящих
           провайдеров. Это не реклама, а ориентир для дальнейшего теста.
         </p>
 
         <div className="grid gap-3 sm:grid-cols-2 text-xs sm:text-sm">
           <div className="space-y-1">
-            <label className="text-slate-200">Бюджет в месяц</label>
+            <label className="text-slate-600">Бюджет в месяц</label>
             <select
               value={budget}
               onChange={(e) => setBudget(e.target.value as Budget)}
-              className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+              className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
             >
               <option value="low">До $2 (минимальный бюджет)</option>
               <option value="medium">$2–3.5 (средний)</option>
@@ -92,13 +92,13 @@ export function ProviderWizard() {
           </div>
 
           <div className="space-y-1">
-            <label className="text-slate-200">
+            <label className="text-slate-600">
               Насколько важны спортивные каналы?
             </label>
             <select
               value={needSport}
               onChange={(e) => setNeedSport(e.target.value as Importance)}
-              className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+              className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
             >
               {importanceOptions.map((o) => (
                 <option key={o.value} value={o.value}>
@@ -109,13 +109,13 @@ export function ProviderWizard() {
           </div>
 
           <div className="space-y-1">
-            <label className="text-slate-200">
+            <label className="text-slate-600">
               Насколько важно качество 4K / Ultra HD?
             </label>
             <select
               value={need4k}
               onChange={(e) => setNeed4k(e.target.value as Importance)}
-              className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+              className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
             >
               {importanceOptions.map((o) => (
                 <option key={o.value} value={o.value}>
@@ -126,13 +126,13 @@ export function ProviderWizard() {
           </div>
 
           <div className="space-y-1">
-            <label className="text-slate-200">
+            <label className="text-slate-600">
               Нужен ли архив передач (просмотр прошедших программ)?
             </label>
             <select
               value={needArchive}
               onChange={(e) => setNeedArchive(e.target.value as Importance)}
-              className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+              className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
             >
               {importanceOptions.map((o) => (
                 <option key={o.value} value={o.value}>
@@ -143,7 +143,7 @@ export function ProviderWizard() {
           </div>
 
           <div className="space-y-1">
-            <label className="text-slate-200">
+            <label className="text-slate-600">
               Насколько важен мультирум (несколько устройств)?
             </label>
             <select
@@ -151,7 +151,7 @@ export function ProviderWizard() {
               onChange={(e) =>
                 setNeedMultiscreen(e.target.value as Importance)
               }
-              className="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-1.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+              className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
             >
               {importanceOptions.map((o) => (
                 <option key={o.value} value={o.value}>
@@ -167,7 +167,7 @@ export function ProviderWizard() {
         <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
           🔍 Подходящие провайдеры
         </h2>
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-slate-600">
           Это не окончательный вердикт, а стартовый список. Возьмите у 2–3
           провайдеров тест и сравните качество на своих устройствах.
         </p>

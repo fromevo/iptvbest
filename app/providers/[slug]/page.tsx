@@ -497,12 +497,12 @@ export default async function ProviderPage({ params }: Props) {
 
       <header className="card p-5 sm:p-7 flex flex-col sm:flex-row gap-4 sm:gap-6">
         <div className="flex items-start gap-3 flex-1">
-          <div className="size-14 sm:size-16 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-3xl">
+          <div className="size-14 sm:size-16 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center text-3xl">
             {provider.logoEmoji}
           </div>
           <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-2 text-xs text-slate-400">
-              <span className="px-2 py-0.5 rounded-full bg-slate-900 border border-slate-800">
+            <div className="inline-flex items-center gap-2 text-xs text-slate-500">
+              <span className="px-2 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600">
                 #{provider.position} в общем рейтинге
               </span>
               <span>
@@ -512,7 +512,7 @@ export default async function ProviderPage({ params }: Props) {
             <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
               {provider.name}
             </h1>
-            <p className="text-sm sm:text-base text-slate-300">
+            <p className="text-sm sm:text-base text-slate-600">
               {details?.intro ?? provider.shortDescription}
             </p>
             {provider.websiteUrl && (
@@ -521,7 +521,7 @@ export default async function ProviderPage({ params }: Props) {
                   href={`/go/${provider.slug}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full bg-brand-500 hover:bg-brand-400 text-white text-xs sm:text-sm font-medium px-3 py-1.5 transition-colors"
+                  className="inline-flex items-center gap-1 rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-medium px-3 py-1.5 transition-colors"
                 >
                   Перейти на сайт провайдера 🌐
                 </a>
@@ -529,15 +529,15 @@ export default async function ProviderPage({ params }: Props) {
             )}
           </div>
         </div>
-        <div className="w-full sm:w-64 rounded-2xl border border-emerald-500/40 bg-emerald-500/10 p-4 text-sm space-y-2">
-          <div className="font-semibold flex items-center gap-2 text-emerald-300">
+        <div className="w-full sm:w-64 rounded-2xl border border-emerald-300 bg-emerald-50 p-4 text-sm space-y-2">
+          <div className="font-semibold flex items-center gap-2 text-emerald-800">
             🎯 Краткий вывод IPTV Best
           </div>
-          <p className="text-slate-100">
+          <p className="text-slate-700">
             {details?.pricing ??
               `${provider.name} подойдёт тем, кто ищет баланс между ценой, числом каналов и доступностью на разных устройствах. Перед покупкой обязательно возьмите тест и проверьте стабильность на своём интернете.`}
           </p>
-          <div className="text-xs text-slate-300">
+          <div className="text-xs text-slate-600">
             Минимальный тариф: от ${provider.monthlyFromUsd} / мес ·{" "}
             {provider.channelsCount} каналов.
           </div>
@@ -546,7 +546,7 @@ export default async function ProviderPage({ params }: Props) {
               href={`/go/${provider.slug}`}
               target="_blank"
               rel="nofollow noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-brand-500 hover:bg-brand-400 text-white text-xs sm:text-sm font-medium px-3 py-1.5 mt-1 transition-colors"
+              className="inline-flex items-center justify-center rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-medium px-3 py-1.5 mt-1 transition-colors"
             >
               Перейти на сайт провайдера 🌐
             </a>
@@ -559,18 +559,18 @@ export default async function ProviderPage({ params }: Props) {
           <h2 className="text-lg font-semibold flex items-center gap-2">
             📡 Основные особенности
           </h2>
-          <div className="space-y-2 text-sm text-slate-200">
+          <div className="space-y-2 text-sm text-slate-600">
             <p>{details?.channels ?? provider.shortDescription}</p>
             {details?.archive && <p>{details.archive}</p>}
             {details?.devices && <p>{details.devices}</p>}
             {provider.websiteUrl && (
-              <p className="pt-1 text-xs text-slate-400">
+              <p className="pt-1 text-xs text-slate-500">
                 Официальный сайт провайдера:{" "}
                 <a
                   href={`/go/${provider.slug}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  className="underline decoration-dotted hover:text-brand-300"
+                  className="underline decoration-dotted hover:text-brand-600"
                 >
                   открыть в новой вкладке →
                 </a>
@@ -583,7 +583,7 @@ export default async function ProviderPage({ params }: Props) {
             <h2 className="text-lg font-semibold flex items-center gap-2">
               ⚖️ Для кого этот сервис
             </h2>
-            <ul className="list-disc list-inside text-sm text-slate-200 space-y-1">
+            <ul className="list-disc list-inside text-sm text-slate-600 space-y-1">
               {details?.bestFor?.map((item) => (
                 <li key={item}>{item}</li>
               )) || (
@@ -608,8 +608,8 @@ export default async function ProviderPage({ params }: Props) {
           <div className="card p-4 sm:p-5">
             <ul className="space-y-2 text-sm">
               {providerChangelog[provider.slug].map((entry, i) => (
-                <li key={i} className="flex gap-2 text-slate-200">
-                  <span className="text-slate-400 shrink-0">{entry.date}</span>
+                <li key={i} className="flex gap-2 text-slate-600">
+                  <span className="text-slate-500 shrink-0">{entry.date}</span>
                   <span>{entry.text}</span>
                 </li>
               ))}

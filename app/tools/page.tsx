@@ -69,7 +69,7 @@ export default function ToolsPage() {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
           🛠 Инструменты IPTV Best
         </h1>
-        <p className="text-sm sm:text-base text-slate-300">
+        <p className="text-sm sm:text-base text-slate-600">
           Собрали в одном месте полезные инструменты, которые помогут быстро
           оценить, подходит ли вам тот или иной IPTV‑сервис и ваш текущий
           интернет‑тариф.
@@ -85,7 +85,7 @@ export default function ToolsPage() {
                   {tool.title}
                 </h2>
               </div>
-              <p className="text-xs sm:text-sm text-slate-300">
+              <p className="text-xs sm:text-sm text-slate-600">
                 {tool.description}
               </p>
             </article>

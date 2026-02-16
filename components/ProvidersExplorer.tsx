@@ -137,14 +137,14 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       <div className="card p-4 sm:p-5 space-y-3">
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
           <div className="flex-1 flex flex-col gap-2">
-            <label className="text-xs font-medium text-slate-300">
+            <label className="text-xs font-medium text-slate-500">
               🔎 Поиск по названию или slug
             </label>
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Например: TV Team, sport, 4K..."
-              className="w-full rounded-xl border border-slate-800 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/70 focus:border-brand-500/60"
+              className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500"
             />
           </div>
           <button
@@ -152,16 +152,16 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
             onClick={() => setShowOnlyFavorites((v) => !v)}
             className={`inline-flex items-center justify-center rounded-xl border px-3 py-2.5 min-h-[44px] text-xs sm:text-sm font-medium transition-colors ${
               showOnlyFavorites
-                ? "border-amber-400/80 bg-amber-500/10 text-amber-200"
-                : "border-slate-700 bg-slate-900 text-slate-200 hover:border-amber-400/60 hover:text-amber-100"
+                ? "border-amber-400 bg-amber-50 text-amber-700"
+                : "border-slate-300 bg-slate-50 text-slate-600 hover:border-amber-400 hover:text-amber-700"
             }`}
           >
             {showOnlyFavorites ? "⭐ Только избранные" : "☆ Показать избранные"}
           </button>
         </div>
 
-        <div className="pt-2 border-t border-slate-800/80 space-y-2">
-          <div className="text-xs text-slate-400">🎯 Быстрые фильтры</div>
+        <div className="pt-2 border-t border-slate-200 space-y-2">
+          <div className="text-xs text-slate-500">🎯 Быстрые фильтры</div>
           <div className="flex flex-wrap gap-2">
             {tagOptions.map((tag) => {
               const active = selectedTags.includes(tag.id);
@@ -172,8 +172,8 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
                   onClick={() => toggleTag(tag.id)}
                   className={`inline-flex items-center gap-1 rounded-full border px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-[11px] sm:text-xs transition-colors ${
                     active
-                      ? "border-emerald-400/80 bg-emerald-500/10 text-emerald-200"
-                      : "border-slate-700 bg-slate-900 text-slate-200 hover:border-emerald-400/60 hover:text-emerald-100"
+                      ? "border-emerald-400 bg-emerald-50 text-emerald-700"
+                      : "border-slate-300 bg-slate-50 text-slate-600 hover:border-emerald-400 hover:text-emerald-700"
                   }`}
                 >
                   <span>{tag.emoji}</span>
@@ -186,7 +186,7 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       </div>
 
       {filtered.length === 0 ? (
-        <div className="card p-4 sm:p-6 text-sm text-slate-300">
+        <div className="card p-4 sm:p-6 text-sm text-slate-600">
           По заданным фильтрам провайдеры не найдены. Попробуйте убрать часть
           тегов или изменить запрос.
         </div>
@@ -207,7 +207,7 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
               <button
                 type="button"
                 onClick={() => setVisibleCount((c) => c + LOAD_MORE_STEP)}
-                className="rounded-xl border border-slate-600 hover:border-brand-500 text-slate-200 px-4 py-2.5 text-sm font-medium transition-colors"
+                className="rounded-xl border border-slate-300 hover:border-brand-500 text-slate-600 hover:text-slate-800 px-4 py-2.5 text-sm font-medium transition-colors"
               >
                 Показать ещё {Math.min(LOAD_MORE_STEP, filtered.length - visibleCount)}
               </button>
@@ -219,19 +219,19 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       {compareProviders.length >= 2 && (
         <div className="sticky bottom-4">
           <div className="mx-auto max-w-xl">
-            <div className="card border-emerald-500/60 bg-emerald-900/40 px-4 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm">
+            <div className="card border-emerald-300 bg-emerald-50 px-4 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm">
               <div className="space-y-1">
-                <div className="font-semibold text-emerald-200 flex items-center gap-2">
+                <div className="font-semibold text-emerald-800 flex items-center gap-2">
                   ⚖️ Выбрано для сравнения: {compareProviders.length}
                 </div>
-                <div className="text-emerald-100">
+                <div className="text-emerald-700">
                   {compareProviders.map((p) => p.name).join(" · ")}
                 </div>
               </div>
               {compareQuery && (
                 <Link
                   href={`/compare?p=${encodeURIComponent(compareQuery)}`}
-                  className="inline-flex items-center gap-1 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-3 py-2 min-h-[44px] items-center shadow-md shadow-emerald-900/50 transition-colors"
+                  className="inline-flex items-center gap-1 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-3 py-2 min-h-[44px] items-center shadow-md shadow-emerald-500/30 transition-colors"
                 >
                   Открыть таблицу сравнения →
                 </Link>

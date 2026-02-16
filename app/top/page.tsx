@@ -111,7 +111,7 @@ export default function TopPage() {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
           🏅 Топ‑10 IPTV провайдеров по версии IPTV Best
         </h1>
-        <p className="text-sm sm:text-base text-slate-300 max-w-2xl">
+        <p className="text-sm sm:text-base text-slate-600 max-w-2xl">
           В этот список вошли провайдеры, которые показали себя лучше всего по
           совокупности параметров: стабильность, качество картинки, количество
           каналов, архив и удобство для разных сценариев использования.
@@ -121,13 +121,13 @@ export default function TopPage() {
         {ranked.map((item, index) => (
           <article key={item.provider.slug} className="space-y-2">
             <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400">
-              <span className="inline-flex items-center justify-center rounded-full bg-slate-900 border border-slate-700 px-2 py-0.5">
+              <span className="inline-flex items-center justify-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5">
                 №{index + 1}
               </span>
               <span>{item.label}</span>
             </div>
             <ProviderCard provider={item.provider} />
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-slate-600">
               Почему в топе: {item.reason}
             </p>
           </article>

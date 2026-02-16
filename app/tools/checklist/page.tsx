@@ -23,7 +23,7 @@ export default function ChecklistPage() {
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
           ✅ Чек-лист перед оплатой IPTV
         </h1>
-        <p className="text-sm sm:text-base text-slate-300">
+        <p className="text-sm sm:text-base text-slate-600">
           Пройдите шаги и отметьте пункты. В конце — итоговый список для печати или сохранения в PDF.
         </p>
       </header>

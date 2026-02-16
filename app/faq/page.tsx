@@ -133,7 +133,7 @@ export default function FAQPage() {
             <h2 className="text-sm sm:text-base font-semibold text-slate-50">
               {item.q}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300">{item.a}</p>
+            <p className="text-xs sm:text-sm text-slate-600">{item.a}</p>
           </div>
         ))}
       </div>

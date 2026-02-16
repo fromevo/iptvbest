@@ -24,7 +24,7 @@ export function SavingsCalculator({ providers }: Props) {
     <div className="card p-4 sm:p-5 space-y-4">
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-1">
-          <label className="text-sm text-slate-300">
+          <label className="text-sm text-slate-600">
             Ваши расходы на кабель/спутник (руб или $ в месяц)
           </label>
           <input
@@ -33,17 +33,17 @@ export function SavingsCalculator({ providers }: Props) {
             placeholder="например 500 или 15"
             value={cableMonthly}
             onChange={(e) => setCableMonthly(e.target.value)}
-            className="w-full rounded-lg border border-slate-700 bg-slate-800/50 px-3 py-2 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+            className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
           />
         </div>
         <div className="space-y-1">
-          <label className="text-sm text-slate-300">
+          <label className="text-sm text-slate-600">
             IPTV провайдер для сравнения
           </label>
           <select
             value={selectedSlug}
             onChange={(e) => setSelectedSlug(e.target.value)}
-            className="w-full rounded-lg border border-slate-700 bg-slate-800/50 px-3 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+            className="w-full rounded-lg border border-slate-700 bg-slate-800/50 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
           >
             {providers
               .sort((a, b) => a.position - b.position)
@@ -57,9 +57,9 @@ export function SavingsCalculator({ providers }: Props) {
       </div>
 
       {(cableValid || selected) && (
-        <div className="rounded-lg bg-slate-800/60 p-4 space-y-2 text-sm">
+        <div className="rounded-lg bg-slate-100 p-4 space-y-2 text-sm">
           {cableValid && (
-            <p className="text-slate-300">
+            <p className="text-slate-600">
               За 12 месяцев кабель/спутник:{" "}
               <strong className="text-white">
                 {cableYear.toLocaleString("ru-RU")} ₽
@@ -69,7 +69,7 @@ export function SavingsCalculator({ providers }: Props) {
           )}
           {selected && (
             <>
-              <p className="text-slate-300">
+              <p className="text-slate-600">
                 IPTV ({selected.name}) за год:{" "}
                 <strong className="text-white">
                   ${iptvYear.toFixed(2)}

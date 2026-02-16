@@ -15,18 +15,18 @@ export default function AboutPage() {
       <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
         ℹ️ О проекте IPTV Best
       </h1>
-      <p className="text-sm sm:text-base text-slate-300">
+      <p className="text-sm sm:text-base text-slate-600">
         IPTV Best — это независимый справочник по платным IPTV-плейлистам и
         онлайн-телевидению. Мы собираем информацию о провайдерах, сравниваем их
         по количеству каналов, цене, качеству, наличию архива и удобству
         использования.
       </p>
-      <p className="text-sm sm:text-base text-slate-300">
+      <p className="text-sm sm:text-base text-slate-600">
         Основная задача проекта — помочь пользователю за несколько минут
         отсеять слабые варианты, выбрать 2–3 подходящих сервиса и протестировать
         их перед покупкой.
       </p>
-      <div className="card p-4 sm:p-5 space-y-2 text-sm sm:text-base text-slate-200">
+      <div className="card p-4 sm:p-5 space-y-2 text-sm sm:text-base text-slate-600">
         <h2 className="text-lg font-semibold">Как мы готовим обзоры</h2>
         <ul className="list-disc list-inside space-y-1">
           <li>Собираем данные с открытых источников и сайтов провайдеров.</li>
