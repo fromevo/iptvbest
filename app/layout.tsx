@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { Header } from "../components/Header";
+import { SiteBanner } from "../components/SiteBanner";
 
 const siteUrl = "https://iptv-best.ru";
 const siteName = "IPTV Best";
@@ -98,6 +99,7 @@ ym(106855606, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer:
           </div>
         </noscript>
         <Header />
+        <SiteBanner />
 
         <main className="py-6 sm:py-10">
           <div className="container-page">{children}</div>

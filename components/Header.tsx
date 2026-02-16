@@ -55,14 +55,8 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Mobile: кнопка меню + ключевые ссылки */}
-        <div className="flex sm:hidden items-center gap-1">
-          <a href="/" className="text-slate-600 hover:text-brand-600 text-sm font-medium py-3 px-3 min-h-[48px] min-w-[48px] inline-flex items-center justify-center">
-            Рейтинг
-          </a>
-          <a href="/compare" className="text-slate-600 hover:text-brand-600 text-sm py-3 px-3 min-h-[48px] min-w-[48px] inline-flex items-center justify-center">
-            Сравнение
-          </a>
+        {/* Mobile: только бургер-меню */}
+        <div className="flex sm:hidden items-center">
           <button
             ref={menuButtonRef}
             type="button"
@@ -74,11 +68,11 @@ export function Header() {
           >
             <span className="sr-only">{mobileOpen ? "Закрыть меню" : "Меню"}</span>
             {mobileOpen ? (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}

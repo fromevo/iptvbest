@@ -516,12 +516,12 @@ export default async function ProviderPage({ params }: Props) {
               {details?.intro ?? provider.shortDescription}
             </p>
             {provider.websiteUrl && (
-              <div className="pt-1">
+              <div className="pt-3">
                 <a
                   href={`/go/${provider.slug}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-medium px-3 py-1.5 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[52px] rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-base sm:text-lg font-bold px-6 py-3.5 transition-colors"
                 >
                   Перейти на сайт провайдера 🌐
                 </a>
@@ -541,16 +541,6 @@ export default async function ProviderPage({ params }: Props) {
             Минимальный тариф: от ${provider.monthlyFromUsd} / мес ·{" "}
             {provider.channelsCount} каналов.
           </div>
-          {provider.websiteUrl && (
-            <a
-              href={`/go/${provider.slug}`}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-medium px-3 py-1.5 mt-1 transition-colors"
-            >
-              Перейти на сайт провайдера 🌐
-            </a>
-          )}
         </div>
       </header>
 
