@@ -146,7 +146,7 @@ export function ProviderCard({
             )}
             <Link
               href={`/providers/${provider.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm shadow-md transition-colors"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white hover:text-white font-bold px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm shadow-md transition-colors"
             >
               Смотреть обзор 🔍
             </Link>

@@ -13,7 +13,7 @@ export default function NotFound() {
       <nav className="flex flex-wrap justify-center gap-3 text-sm">
         <Link
           href="/"
-          className="rounded-full bg-brand-500 hover:bg-brand-600 text-white font-medium px-4 py-2 transition-colors"
+          className="rounded-full bg-brand-500 hover:bg-brand-600 text-white hover:text-white font-medium px-4 py-2 transition-colors"
         >
           На главную
         </Link>

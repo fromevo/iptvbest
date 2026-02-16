@@ -231,7 +231,7 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
               {compareQuery && (
                 <Link
                   href={`/compare?p=${encodeURIComponent(compareQuery)}`}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 min-h-[44px] items-center shadow-md transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white hover:text-white font-bold px-4 py-2.5 min-h-[44px] items-center shadow-md transition-colors"
                 >
                   Открыть таблицу сравнения →
                 </Link>
