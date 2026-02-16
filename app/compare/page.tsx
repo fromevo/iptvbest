@@ -209,7 +209,7 @@ export default async function ComparePage({ searchParams }: Props) {
                   >
                     {p!.websiteUrl ? (
                       <a
-                        href={`/go/${p!.slug}`}
+                        href={p!.websiteUrl}
                         target="_blank"
                         rel="nofollow noopener noreferrer"
                         className="text-brand-600 hover:text-brand-500 text-xs sm:text-sm"

@@ -518,7 +518,7 @@ export default async function ProviderPage({ params }: Props) {
             {provider.websiteUrl && (
               <div className="pt-1">
                 <a
-                  href={`/go/${provider.slug}`}
+                  href={provider.websiteUrl!}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="inline-flex items-center gap-1 rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-medium px-3 py-1.5 transition-colors"
@@ -543,7 +543,7 @@ export default async function ProviderPage({ params }: Props) {
           </div>
           {provider.websiteUrl && (
             <a
-              href={`/go/${provider.slug}`}
+              href={provider.websiteUrl!}
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-medium px-3 py-1.5 mt-1 transition-colors"
@@ -567,7 +567,7 @@ export default async function ProviderPage({ params }: Props) {
               <p className="pt-1 text-xs text-slate-500">
                 Официальный сайт провайдера:{" "}
                 <a
-                  href={`/go/${provider.slug}`}
+                  href={provider.websiteUrl!}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="underline decoration-dotted hover:text-brand-600"

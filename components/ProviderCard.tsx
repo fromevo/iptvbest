@@ -136,7 +136,7 @@ export function ProviderCard({
             )}
             {provider.websiteUrl && (
               <a
-                href={`/go/${provider.slug}`}
+                href={provider.websiteUrl}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-slate-50 text-slate-600 px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-xs sm:text-sm hover:border-brand-400 hover:text-brand-600 transition-colors"

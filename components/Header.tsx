@@ -34,7 +34,7 @@ export function Header() {
               IPTV Best
             </div>
             <div className="text-[11px] sm:text-xs text-slate-500">
-              Гид по платным IPTV плейлистам
+              Гид по платным IPTV провайдерам
             </div>
           </div>
         </div>
