@@ -16,7 +16,7 @@ export default function ChecklistPage() {
     <div className="space-y-5 sm:space-y-7 max-w-3xl">
       <header className="space-y-2">
         <nav className="text-sm">
-          <Link href="/tools" className="text-slate-400 hover:text-white">
+          <Link href="/tools" className="text-slate-600 hover:text-slate-800">
             ← Инструменты
           </Link>
         </nav>

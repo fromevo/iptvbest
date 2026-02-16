@@ -25,7 +25,7 @@ export function Header() {
   };
 
   return (
-    <div className="border-b-2 border-brand-100 bg-gradient-to-r from-white via-brand-50/30 to-white backdrop-blur-md sticky top-0 z-40 shadow-sm">
+    <div className="border-b-2 border-brand-100 bg-gradient-to-r from-white via-brand-50/30 to-white shadow-sm">
       <header className="container-page flex items-center justify-between py-4 sm:py-5">
         <div className="flex items-center gap-3 sm:gap-4 min-w-0">
           <span className="text-3xl sm:text-4xl shrink-0" aria-hidden>📺</span>

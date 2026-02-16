@@ -75,7 +75,7 @@ export function BandwidthCalculator() {
         </div>
       </div>
 
-      <div className="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-3 text-xs sm:text-sm text-emerald-100 space-y-1.5">
+      <div className="rounded-xl border-2 border-emerald-300 bg-emerald-50 px-4 py-3 text-sm text-emerald-900 space-y-1.5">
         <div className="font-semibold">
           Рекомендованная скорость: ~{recommended} Мбит/с и выше
         </div>

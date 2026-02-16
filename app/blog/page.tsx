@@ -43,19 +43,19 @@ export default function BlogPage() {
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <article className="card p-4 sm:p-5 hover:border-brand-500/50 transition-colors">
               <div className="flex items-center justify-between gap-2 mb-2">
-                <h2 className="text-base sm:text-lg font-semibold tracking-tight text-slate-50">
+                <h2 className="text-base sm:text-lg font-semibold tracking-tight text-slate-800">
                   {post.title}
                 </h2>
-                <span className="text-[11px] sm:text-xs text-slate-400 shrink-0">
+                <span className="text-xs sm:text-sm text-slate-600 shrink-0">
                   ⏱ {post.readingTime}
                 </span>
               </div>
               <div className="mb-2 flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5 text-[11px] sm:text-xs text-slate-600">
+                <span className="inline-flex items-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5 text-xs sm:text-sm text-slate-700">
                   #{post.tag}
                 </span>
                 {post.publishedDate && (
-                  <time dateTime={post.publishedDate} className="text-[11px] sm:text-xs text-slate-500">
+                  <time dateTime={post.publishedDate} className="text-xs sm:text-sm text-slate-600">
                     {new Date(post.publishedDate).toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" })}
                   </time>
                 )}

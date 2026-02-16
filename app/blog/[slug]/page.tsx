@@ -72,7 +72,7 @@ export default async function BlogPostPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Блог", href: "/blog" }, { label: post.title }]} />
       <header className="space-y-3">
-        <div className="inline-flex flex-wrap items-center gap-2 text-[11px] sm:text-xs text-slate-400">
+        <div className="inline-flex flex-wrap items-center gap-2 text-xs sm:text-sm text-slate-600">
           <span className="inline-flex items-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5">
             #{post.tag}
           </span>
@@ -83,15 +83,15 @@ export default async function BlogPostPage({ params }: Props) {
             </time>
           )}
         </div>
-        <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-800">
           {post.title}
         </h1>
-        <p className="text-sm sm:text-base text-slate-600">{post.summary}</p>
+        <p className="text-sm sm:text-base text-slate-700">{post.summary}</p>
       </header>
-      <article className="space-y-5 sm:space-y-6 text-sm sm:text-base text-slate-600 leading-relaxed">
+      <article className="space-y-5 sm:space-y-6 text-sm sm:text-base text-slate-700 leading-relaxed">
         {post.sections.map((section) => (
           <section key={section.heading} className="space-y-2">
-            <h2 className="text-base sm:text-lg font-semibold text-slate-50">
+            <h2 className="text-base sm:text-lg font-semibold text-slate-800">
               {section.heading}
             </h2>
             {section.body.map((p) => (

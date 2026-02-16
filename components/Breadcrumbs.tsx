@@ -11,7 +11,7 @@ interface Props {
 
 export function Breadcrumbs({ items }: Props) {
   return (
-    <nav aria-label="Хлебные крошки" className="flex items-center gap-2 text-sm text-slate-400 flex-wrap">
+    <nav aria-label="Хлебные крошки" className="flex items-center gap-2 text-sm text-slate-600 flex-wrap">
       {items.map((item, i) => (
         <span key={i} className="flex items-center gap-2">
           {i > 0 && <span aria-hidden className="text-slate-600">/</span>}

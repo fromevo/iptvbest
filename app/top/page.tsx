@@ -120,7 +120,7 @@ export default function TopPage() {
       <section className="space-y-4">
         {ranked.map((item, index) => (
           <article key={item.provider.slug} className="space-y-2">
-            <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-600">
               <span className="inline-flex items-center justify-center rounded-full bg-slate-100 border border-slate-200 px-2 py-0.5">
                 №{index + 1}
               </span>

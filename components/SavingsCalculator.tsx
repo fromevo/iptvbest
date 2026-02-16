@@ -43,7 +43,7 @@ export function SavingsCalculator({ providers }: Props) {
           <select
             value={selectedSlug}
             onChange={(e) => setSelectedSlug(e.target.value)}
-            className="w-full rounded-lg border border-slate-700 bg-slate-800/50 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
+            className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500/70"
           >
             {providers
               .sort((a, b) => a.position - b.position)
@@ -59,9 +59,9 @@ export function SavingsCalculator({ providers }: Props) {
       {(cableValid || selected) && (
         <div className="rounded-lg bg-slate-100 p-4 space-y-2 text-sm">
           {cableValid && (
-            <p className="text-slate-600">
+            <p className="text-slate-700">
               За 12 месяцев кабель/спутник:{" "}
-              <strong className="text-white">
+              <strong className="text-slate-900">
                 {cableYear.toLocaleString("ru-RU")} ₽
               </strong>{" "}
               (при {cable} ₽/мес).
@@ -69,15 +69,15 @@ export function SavingsCalculator({ providers }: Props) {
           )}
           {selected && (
             <>
-              <p className="text-slate-600">
+              <p className="text-slate-700">
                 IPTV ({selected.name}) за год:{" "}
-                <strong className="text-white">
+                <strong className="text-slate-900">
                   ${iptvYear.toFixed(2)}
                 </strong>{" "}
                 (от ${iptvMonthly}/мес).
               </p>
               {cableValid && (
-                <p className="text-emerald-400/90 text-xs">
+                <p className="text-emerald-800 text-xs">
                   Чтобы сравнить в одной валюте, пересчитайте доллары по текущему курсу: тогда сможете оценить экономию при переходе на IPTV.
                 </p>
               )}
@@ -86,9 +86,9 @@ export function SavingsCalculator({ providers }: Props) {
         </div>
       )}
 
-      <p className="text-xs text-slate-400">
+      <p className="text-sm text-slate-600">
         Сравнение условное: курс доллара и цены кабеля/IPTV уточняйте отдельно.{" "}
-        <Link href="/providers" className="underline hover:text-brand-300">
+        <Link href="/providers" className="underline hover:text-brand-600">
           Список провайдеров
         </Link>
       </p>

@@ -130,7 +130,7 @@ export default function FAQPage() {
       <div className="space-y-3 sm:space-y-4">
         {faqs.map((item) => (
           <div key={item.q} className="card p-4 sm:p-5 space-y-2">
-            <h2 className="text-sm sm:text-base font-semibold text-slate-50">
+            <h2 className="text-sm sm:text-base font-semibold text-slate-800">
               {item.q}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">{item.a}</p>

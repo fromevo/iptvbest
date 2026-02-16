@@ -22,12 +22,12 @@ export default function ContactPage() {
       </p>
       <div className="card p-4 sm:p-5 text-sm sm:text-base text-slate-600 space-y-2">
         <div>
-          <span className="text-slate-400">Email для связи:</span>{" "}
+          <span className="text-slate-600">Email для связи:</span>{" "}
           <span className="font-mono text-slate-800">
             support@iptv-best.ru
           </span>
         </div>
-        <p className="text-xs sm:text-sm text-slate-400">
+        <p className="text-xs sm:text-sm text-slate-600">
           Указывайте в письме название провайдера, ссылку на страницу на сайте и
           кратко опишите, какие изменения вы предлагаете.
         </p>

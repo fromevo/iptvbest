@@ -66,8 +66,8 @@ export function ChecklistTool() {
         <div className="space-y-5">
           {STEPS.map((step, si) => (
             <div key={si}>
-              <h3 className="text-base font-semibold mb-2 flex items-center gap-2">
-                <span className="text-slate-400">{si + 1}.</span>
+              <h3 className="text-base font-semibold mb-2 flex items-center gap-2 text-slate-800">
+                <span className="text-slate-600">{si + 1}.</span>
                 {step.title}
               </h3>
               <ul className="space-y-2">
@@ -86,8 +86,8 @@ export function ChecklistTool() {
                         <span
                           className={
                             isChecked
-                              ? "text-slate-400 line-through"
-                              : "text-slate-600 group-hover:text-slate-800"
+                              ? "text-slate-500 line-through"
+                              : "text-slate-700 group-hover:text-slate-900"
                           }
                         >
                           {item}
@@ -112,12 +112,12 @@ export function ChecklistTool() {
         <ul className="text-sm space-y-1.5 print:text-black">
           {STEPS.flatMap((s) => s.items).map((item, i) => (
             <li key={i} className="flex items-center gap-2">
-              <span className="text-slate-500 print:text-slate-700">□</span>
-              {item}
+              <span className="text-slate-600 print:text-slate-700">□</span>
+              <span className="text-slate-700">{item}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-3 text-xs text-slate-400 print:text-slate-600">
+        <p className="mt-3 text-sm text-slate-600 print:text-slate-700">
           {PRINT_TITLE}
         </p>
       </section>
