@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #020617;
+  --bg-card: #020617;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  @apply text-brand-400 hover:text-brand-300 transition-colors;
+}
+
+.container-page {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/80 to-slate-950/80 shadow-lg shadow-black/40 backdrop-blur-sm;
+}
+
+/* Mobile-friendly: избегаем авто-зума iOS при фокусе в поле ввода */
+@media (max-width: 767px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="search"],
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Минимальная зона нажатия для интерактивных элементов (рекомендация ~44px) */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
