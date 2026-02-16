@@ -10,7 +10,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#f1f5f9"
+  themeColor: "#e2e8f0"
 };
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function RootLayout({
 
   return (
     <html lang="ru">
-      <body className="min-h-screen bg-[#f1f5f9] text-slate-900 text-base">
+      <body className="min-h-screen bg-slate-200 text-slate-900 text-base">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -103,25 +103,25 @@ ym(106855606, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer:
           <div className="container-page">{children}</div>
         </main>
 
-        <footer className="border-t border-slate-200 bg-white py-6 sm:py-8">
-          <div className="container-page text-sm text-slate-600 flex flex-col sm:flex-row gap-3 sm:gap-6 justify-between items-center sm:items-start">
-            <div className="font-medium">
+        <footer className="border-t-2 border-slate-300 bg-white py-6 sm:py-8">
+          <div className="container-page text-sm text-slate-700 flex flex-col sm:flex-row gap-3 sm:gap-6 justify-between items-center sm:items-start">
+            <div className="font-semibold text-slate-800">
               © {new Date().getFullYear()} IPTV Best. Все права защищены.
             </div>
             <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
-              <a href="/devices" className="hover:text-brand-600 font-medium">
+              <a href="/devices" className="text-slate-700 hover:text-blue-600 font-semibold">
                 Устройства
               </a>
-              <a href="/apps" className="hover:text-brand-600 font-medium">
+              <a href="/apps" className="text-slate-700 hover:text-blue-600 font-semibold">
                 Приложения
               </a>
-              <a href="/about" className="hover:text-brand-600 font-medium">
+              <a href="/about" className="text-slate-700 hover:text-blue-600 font-semibold">
                 О проекте
               </a>
-              <a href="/privacy" className="hover:text-brand-600 font-medium">
+              <a href="/privacy" className="text-slate-700 hover:text-blue-600 font-semibold">
                 Политика конфиденциальности
               </a>
-              <a href="/contact" className="hover:text-brand-600 font-medium">
+              <a href="/contact" className="text-slate-700 hover:text-blue-600 font-semibold">
                 Контакты
               </a>
             </div>

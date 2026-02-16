@@ -137,14 +137,14 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       <div className="card p-4 sm:p-5 space-y-3">
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
           <div className="flex-1 flex flex-col gap-2">
-            <label className="text-sm font-medium text-slate-700">
+            <label className="text-sm font-semibold text-slate-800">
               🔎 Поиск по названию или slug
             </label>
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Например: TV Team, sport, 4K..."
-              className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+              className="w-full rounded-lg border-2 border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
           <button
@@ -152,8 +152,8 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
             onClick={() => setShowOnlyFavorites((v) => !v)}
             className={`inline-flex items-center justify-center rounded-xl border px-3 py-2.5 min-h-[44px] text-xs sm:text-sm font-medium transition-colors ${
               showOnlyFavorites
-                ? "border-amber-400 bg-amber-100 text-amber-800 font-semibold"
-                : "border-slate-300 bg-slate-50 text-slate-600 hover:border-amber-400 hover:bg-amber-50 hover:text-amber-800"
+                ? "border-amber-500 bg-amber-200 text-amber-900 font-bold"
+                : "border-slate-300 bg-slate-100 text-slate-700 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-900 font-semibold"
             }`}
           >
             {showOnlyFavorites ? "⭐ Только избранные" : "☆ Показать избранные"}
@@ -161,7 +161,7 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
         </div>
 
         <div className="pt-3 border-t border-slate-200 space-y-3">
-          <div className="text-sm font-medium text-slate-700">🎯 Быстрые фильтры</div>
+          <div className="text-sm font-semibold text-slate-800">🎯 Быстрые фильтры</div>
           <div className="flex flex-wrap gap-2">
             {tagOptions.map((tag) => {
               const active = selectedTags.includes(tag.id);
@@ -170,10 +170,10 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
                   key={tag.id}
                   type="button"
                   onClick={() => toggleTag(tag.id)}
-                  className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm font-medium transition-colors ${
+                  className={`inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm font-semibold transition-colors ${
                     active
-                      ? "border-emerald-300 bg-emerald-50 text-emerald-800"
-                      : "border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 hover:bg-slate-100"
+                      ? "border-emerald-500 bg-emerald-200 text-emerald-900"
+                      : "border-slate-300 bg-slate-100 text-slate-700 hover:border-emerald-400 hover:bg-emerald-100 hover:text-emerald-900"
                   }`}
                 >
                   <span>{tag.emoji}</span>
@@ -207,7 +207,7 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
               <button
                 type="button"
                 onClick={() => setVisibleCount((c) => c + LOAD_MORE_STEP)}
-                className="rounded-lg border border-slate-200 bg-white hover:border-brand-400 hover:bg-brand-50 text-slate-700 hover:text-brand-700 px-4 py-2.5 text-sm font-medium transition-colors shadow-sm"
+                className="rounded-lg border-2 border-slate-300 bg-white hover:border-blue-500 hover:bg-blue-50 text-slate-800 hover:text-blue-700 px-4 py-2.5 text-sm font-bold transition-colors shadow-md"
               >
                 Показать ещё {Math.min(LOAD_MORE_STEP, filtered.length - visibleCount)}
               </button>
@@ -219,19 +219,19 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       {compareProviders.length >= 2 && (
         <div className="sticky bottom-4">
           <div className="mx-auto max-w-xl">
-            <div className="card border border-emerald-200 bg-emerald-50 px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm">
+            <div className="card border-2 border-emerald-500 bg-emerald-100 px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm">
               <div className="space-y-1">
-                <div className="font-semibold text-emerald-800 flex items-center gap-2">
+                <div className="font-bold text-emerald-900 flex items-center gap-2">
                   ⚖️ Выбрано для сравнения: {compareProviders.length}
                 </div>
-                <div className="text-slate-600">
+                <div className="text-emerald-900 font-medium">
                   {compareProviders.map((p) => p.name).join(" · ")}
                 </div>
               </div>
               {compareQuery && (
                 <Link
                   href={`/compare?p=${encodeURIComponent(compareQuery)}`}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2.5 min-h-[44px] items-center shadow-sm transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 min-h-[44px] items-center shadow-md transition-colors"
                 >
                   Открыть таблицу сравнения →
                 </Link>

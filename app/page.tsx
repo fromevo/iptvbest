@@ -32,17 +32,17 @@ export default async function HomePage({
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
               🔥 Лучшие IPTV провайдеры 2026
             </h1>
-            <p className="text-base text-slate-600 max-w-2xl leading-relaxed">
+            <p className="text-base text-slate-700 max-w-2xl leading-relaxed">
               Сервис IPTV Best собирает в одном месте платные IPTV плейлисты,
               сравнивает их по количеству каналов, цене, качеству картинки и
               дополнительным функциям вроде архива и мультирума.
             </p>
           </div>
-          <div className="text-sm rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 min-w-[240px]">
-            <div className="font-semibold mb-1.5 text-emerald-800">
+          <div className="text-sm rounded-xl border-2 border-emerald-400 bg-emerald-100 px-4 py-3 min-w-[240px]">
+            <div className="font-bold mb-1.5 text-emerald-900">
               ✅ Как пользоваться рейтингом?
             </div>
-            <ul className="space-y-1 list-disc list-inside text-slate-700">
+            <ul className="space-y-1 list-disc list-inside text-emerald-900">
               <li>выберите 2–3 сервиса из ТОП-10;</li>
               <li>запросите бесплатный тест у каждого;</li>
               <li>оцените качество и удобство на своих устройствах.</li>
@@ -56,7 +56,7 @@ export default async function HomePage({
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
             🏅 Рейтинг платных IPTV плейлистов
           </h2>
-          <div className="text-sm text-slate-500">
+          <div className="text-sm text-slate-600 font-medium">
             Обновлено: 2026 · 23+ провайдера
           </div>
         </div>

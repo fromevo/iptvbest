@@ -25,7 +25,7 @@ export function Header() {
   };
 
   return (
-    <div className="border-b border-slate-200 bg-white">
+    <div className="border-b-2 border-slate-300 bg-white shadow-sm">
       <header className="container-page flex items-center justify-between py-4 sm:py-5">
         <div className="flex items-center gap-3 sm:gap-4 min-w-0">
           <span className="text-3xl sm:text-4xl shrink-0" aria-hidden>📺</span>
@@ -33,7 +33,7 @@ export function Header() {
             <div className="text-lg sm:text-xl font-bold tracking-tight truncate text-slate-900">
               IPTV Best
             </div>
-            <div className="text-xs sm:text-sm text-slate-500">
+            <div className="text-xs sm:text-sm text-slate-600 font-medium">
               Гид по платным IPTV провайдерам
             </div>
           </div>
@@ -41,14 +41,14 @@ export function Header() {
 
         {/* Desktop nav */}
         <nav
-          className="hidden sm:flex items-center gap-4 lg:gap-6 text-sm text-slate-600 font-medium"
+          className="hidden sm:flex items-center gap-4 lg:gap-6 text-sm font-semibold"
           aria-label="Основная навигация"
         >
           {navLinks.map(({ href, label }) => (
             <a
               key={href}
               href={href}
-              className="text-slate-700 hover:text-brand-600 py-2 min-h-[48px] inline-flex items-center transition-colors duration-150"
+              className="text-slate-700 hover:text-blue-600 py-2 min-h-[48px] inline-flex items-center transition-colors duration-150"
             >
               {label}
             </a>
@@ -67,7 +67,7 @@ export function Header() {
             ref={menuButtonRef}
             type="button"
             onClick={() => setMobileOpen((o) => !o)}
-            className="p-3 min-h-[48px] min-w-[48px] inline-flex items-center justify-center rounded-lg text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white"
+            className="p-3 min-h-[48px] min-w-[48px] inline-flex items-center justify-center rounded-lg text-slate-700 hover:text-blue-600 hover:bg-slate-100 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white"
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
             aria-label={mobileOpen ? "Закрыть меню" : "Открыть меню"}
@@ -102,7 +102,7 @@ export function Header() {
                 <a
                   href={href}
                   onClick={closeMenu}
-                  className="block py-3.5 px-2 text-base text-slate-600 hover:text-brand-600 hover:bg-brand-50 min-h-[48px] flex items-center font-medium"
+                  className="block py-3.5 px-2 text-base text-slate-700 hover:text-blue-600 hover:bg-blue-50 min-h-[48px] flex items-center font-semibold"
                 >
                   {label}
                 </a>

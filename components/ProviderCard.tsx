@@ -41,12 +41,12 @@ export function ProviderCard({
   return (
     <article className="card p-5 sm:p-6 flex flex-col sm:flex-row gap-5 sm:gap-6">
       <div className="flex sm:flex-col items-start gap-3 w-full sm:w-52">
-        <div className="flex items-center justify-center size-14 sm:size-16 rounded-xl bg-slate-50 border border-slate-200 text-3xl">
+        <div className="flex items-center justify-center size-14 sm:size-16 rounded-xl bg-blue-50 border-2 border-blue-200 text-3xl">
           {provider.logoEmoji}
         </div>
           <div className="flex flex-col gap-1.5 flex-1">
-          <div className="inline-flex items-center gap-2 text-sm font-medium text-slate-600">
-            <span className="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200 text-slate-700">
+          <div className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700">
+            <span className="px-2.5 py-1 rounded-lg bg-blue-100 border border-blue-300 text-blue-800">
               #{provider.position} в рейтинге
             </span>
             <span className="inline-flex items-center gap-1 text-amber-700">
@@ -56,7 +56,7 @@ export function ProviderCard({
           <h2 className="text-lg sm:text-xl font-bold tracking-tight text-slate-900">
             {provider.name}
           </h2>
-          <div className="text-sm text-slate-500">
+          <div className="text-sm text-slate-600 font-medium">
             {provider.channelsCount} каналов · от ${provider.monthlyFromUsd} / мес
           </div>
         </div>
@@ -66,8 +66,8 @@ export function ProviderCard({
               onClick={onToggleFavorite}
               className={`ml-auto sm:ml-0 inline-flex items-center justify-center rounded-full border px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1 text-xs font-medium transition-colors ${
                 isFavorite
-                  ? "border-amber-400 bg-amber-100 text-amber-800 font-semibold"
-                  : "border-slate-300 bg-slate-50 text-slate-600 hover:border-amber-400 hover:bg-amber-50 hover:text-amber-800"
+                  ? "border-amber-500 bg-amber-200 text-amber-900 font-bold"
+                  : "border-slate-300 bg-slate-100 text-slate-700 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-900 font-semibold"
               }`}
             >
               {isFavorite ? "⭐ В избранном" : "☆ В избранное"}
@@ -76,7 +76,7 @@ export function ProviderCard({
       </div>
 
       <div className="flex-1 flex flex-col gap-3">
-        <p className="text-base text-slate-600 leading-relaxed">
+        <p className="text-base text-slate-700 leading-relaxed">
           {provider.shortDescription}
         </p>
 
@@ -84,7 +84,7 @@ export function ProviderCard({
           {provider.tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200 text-slate-700"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-100 border border-emerald-400 text-emerald-900 font-semibold"
             >
               <span>{tagEmojis[tag] ?? "✅"}</span>
               <span>{tagLabels[tag] ?? tag}</span>
@@ -127,8 +127,8 @@ export function ProviderCard({
                 onClick={onToggleCompare}
                 className={`inline-flex items-center gap-1 rounded-full border px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-xs sm:text-sm transition-colors ${
                   isCompared
-                    ? "border-emerald-500 bg-emerald-100 text-emerald-800 font-semibold"
-                    : "border-slate-300 bg-slate-50 text-slate-600 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-800"
+                    ? "border-emerald-500 bg-emerald-200 text-emerald-900 font-bold"
+                    : "border-slate-300 bg-slate-100 text-slate-700 hover:border-emerald-500 hover:bg-emerald-100 hover:text-emerald-900 font-semibold"
                 }`}
               >
                 {isCompared ? "✓ В сравнении" : "⇄ Сравнить"}
@@ -139,14 +139,14 @@ export function ProviderCard({
                 href={`/go/${provider.slug}`}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm font-medium hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700 transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg border-2 border-blue-300 bg-blue-50 text-blue-800 px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm font-semibold hover:bg-blue-100 hover:border-blue-500 transition-colors"
               >
                 Перейти на сайт 🔗
               </a>
             )}
             <Link
               href={`/providers/${provider.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm shadow-sm transition-colors"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-sm shadow-md transition-colors"
             >
               Смотреть обзор 🔍
             </Link>
