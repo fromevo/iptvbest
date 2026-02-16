@@ -7,9 +7,14 @@
   --bg-card: #ffffff;
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
   @apply bg-slate-50 text-slate-800 antialiased;
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
 a {
@@ -17,11 +22,11 @@ a {
 }
 
 .container-page {
-  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2;
 }
 
 .card {
-  @apply rounded-2xl border border-slate-200 bg-white shadow-md shadow-slate-200/60;
+  @apply rounded-2xl border-2 border-slate-200 bg-white shadow-lg shadow-slate-200/50;
 }
 
 /* Mobile-friendly: избегаем авто-зума iOS при фокусе в поле ввода */

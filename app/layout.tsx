@@ -69,7 +69,7 @@ export default function RootLayout({
 
   return (
     <html lang="ru">
-      <body className="min-h-screen bg-gradient-to-b from-slate-100 via-slate-50 to-white text-slate-800">
+      <body className="min-h-screen bg-gradient-to-b from-slate-100 via-slate-50 to-white text-slate-800 text-base">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -103,25 +103,25 @@ ym(106855606, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer:
           <div className="container-page">{children}</div>
         </main>
 
-        <footer className="border-t border-slate-200 bg-white/80">
-          <div className="container-page py-5 sm:py-6 text-xs sm:text-sm text-slate-500 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between">
-            <div>
+        <footer className="border-t-2 border-brand-100 bg-gradient-to-r from-white via-slate-50 to-white py-6 sm:py-8">
+          <div className="container-page text-sm sm:text-base text-slate-600 flex flex-col sm:flex-row gap-3 sm:gap-6 justify-between items-center sm:items-start">
+            <div className="font-medium">
               © {new Date().getFullYear()} IPTV Best. Все права защищены.
             </div>
-            <div className="flex flex-wrap gap-3">
-              <a href="/devices" className="hover:text-slate-800">
+            <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
+              <a href="/devices" className="hover:text-brand-600 font-medium">
                 Устройства
               </a>
-              <a href="/apps" className="hover:text-slate-800">
+              <a href="/apps" className="hover:text-brand-600 font-medium">
                 Приложения
               </a>
-              <a href="/about" className="hover:text-slate-800">
+              <a href="/about" className="hover:text-brand-600 font-medium">
                 О проекте
               </a>
-              <a href="/privacy" className="hover:text-slate-800">
+              <a href="/privacy" className="hover:text-brand-600 font-medium">
                 Политика конфиденциальности
               </a>
-              <a href="/contact" className="hover:text-slate-800">
+              <a href="/contact" className="hover:text-brand-600 font-medium">
                 Контакты
               </a>
             </div>

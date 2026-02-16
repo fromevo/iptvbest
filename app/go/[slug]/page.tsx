@@ -1,6 +1,5 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getProviderBySlug } from "../../../data/providers";
-import { GoRedirect } from "../../../components/GoRedirect";
 
 export default async function GoPage({
   params
@@ -10,5 +9,5 @@ export default async function GoPage({
   const { slug } = await params;
   const provider = getProviderBySlug(slug);
   if (!provider?.websiteUrl) notFound();
-  return <GoRedirect slug={slug} />;
+  redirect(provider.websiteUrl);
 }

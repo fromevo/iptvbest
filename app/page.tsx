@@ -26,23 +26,23 @@ export default async function HomePage({
 
   return (
     <div className="space-y-6 sm:space-y-8">
-      <section className="card p-5 sm:p-7">
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center justify-between">
-          <div className="space-y-2">
-            <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
+      <section className="card p-6 sm:p-8 bg-gradient-to-br from-white to-brand-50/40">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 items-start sm:items-center justify-between">
+          <div className="space-y-3">
+            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight flex items-center gap-3 text-slate-800">
               🔥 Лучшие IPTV провайдеры 2026
             </h1>
-            <p className="text-sm sm:text-base text-slate-600 max-w-2xl">
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
               Сервис IPTV Best собирает в одном месте платные IPTV плейлисты,
               сравнивает их по количеству каналов, цене, качеству картинки и
               дополнительным функциям вроде архива и мультирума.
             </p>
           </div>
-          <div className="text-xs sm:text-sm text-slate-600 rounded-2xl border border-emerald-300 bg-emerald-50 px-3 py-2">
-            <div className="font-medium mb-1 flex items-center gap-1.5">
+          <div className="text-sm text-slate-700 rounded-2xl border-2 border-emerald-300 bg-emerald-50 px-4 py-3 shadow-sm min-w-[240px]">
+            <div className="font-semibold mb-1.5 flex items-center gap-2 text-emerald-800">
               ✅ Как пользоваться рейтингом?
             </div>
-            <ul className="space-y-0.5 list-disc list-inside">
+            <ul className="space-y-1 list-disc list-inside text-emerald-800/90">
               <li>выберите 2–3 сервиса из ТОП-10;</li>
               <li>запросите бесплатный тест у каждого;</li>
               <li>оцените качество и удобство на своих устройствах.</li>
@@ -51,12 +51,12 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="space-y-3">
+      <section className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
+          <h2 className="text-xl sm:text-2xl font-bold tracking-tight flex items-center gap-2 text-slate-800">
             🏅 Рейтинг платных IPTV плейлистов
           </h2>
-          <div className="text-xs sm:text-sm text-slate-500">
+          <div className="text-sm text-slate-500">
             Обновлено: 2026 · 23+ провайдера
           </div>
         </div>

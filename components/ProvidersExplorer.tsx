@@ -137,14 +137,14 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       <div className="card p-4 sm:p-5 space-y-3">
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
           <div className="flex-1 flex flex-col gap-2">
-            <label className="text-xs font-medium text-slate-500">
+            <label className="text-sm font-semibold text-slate-600">
               🔎 Поиск по названию или slug
             </label>
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Например: TV Team, sport, 4K..."
-              className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500"
+              className="w-full rounded-xl border-2 border-slate-200 bg-white px-4 py-3 text-base text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
             />
           </div>
           <button
@@ -152,16 +152,16 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
             onClick={() => setShowOnlyFavorites((v) => !v)}
             className={`inline-flex items-center justify-center rounded-xl border px-3 py-2.5 min-h-[44px] text-xs sm:text-sm font-medium transition-colors ${
               showOnlyFavorites
-                ? "border-amber-400 bg-amber-50 text-amber-700"
-                : "border-slate-300 bg-slate-50 text-slate-600 hover:border-amber-400 hover:text-amber-700"
+                ? "border-amber-400 bg-amber-100 text-amber-800 font-semibold"
+                : "border-slate-300 bg-slate-50 text-slate-600 hover:border-amber-400 hover:bg-amber-50 hover:text-amber-800"
             }`}
           >
             {showOnlyFavorites ? "⭐ Только избранные" : "☆ Показать избранные"}
           </button>
         </div>
 
-        <div className="pt-2 border-t border-slate-200 space-y-2">
-          <div className="text-xs text-slate-500">🎯 Быстрые фильтры</div>
+        <div className="pt-3 border-t-2 border-slate-200 space-y-3">
+          <div className="text-sm font-semibold text-slate-600">🎯 Быстрые фильтры</div>
           <div className="flex flex-wrap gap-2">
             {tagOptions.map((tag) => {
               const active = selectedTags.includes(tag.id);
@@ -170,10 +170,10 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
                   key={tag.id}
                   type="button"
                   onClick={() => toggleTag(tag.id)}
-                  className={`inline-flex items-center gap-1 rounded-full border px-3 py-2 min-h-[44px] sm:min-h-0 sm:py-1.5 text-[11px] sm:text-xs transition-colors ${
+                  className={`inline-flex items-center gap-1.5 rounded-full border-2 px-4 py-2.5 min-h-[48px] sm:min-h-0 sm:py-2 text-sm font-medium transition-colors ${
                     active
-                      ? "border-emerald-400 bg-emerald-50 text-emerald-700"
-                      : "border-slate-300 bg-slate-50 text-slate-600 hover:border-emerald-400 hover:text-emerald-700"
+                      ? "border-emerald-500 bg-emerald-100 text-emerald-800"
+                      : "border-slate-300 bg-slate-50 text-slate-600 hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-800"
                   }`}
                 >
                   <span>{tag.emoji}</span>
@@ -207,7 +207,7 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
               <button
                 type="button"
                 onClick={() => setVisibleCount((c) => c + LOAD_MORE_STEP)}
-                className="rounded-xl border border-slate-300 hover:border-brand-500 text-slate-600 hover:text-slate-800 px-4 py-2.5 text-sm font-medium transition-colors"
+                className="rounded-xl border-2 border-brand-300 hover:border-brand-500 bg-brand-50 hover:bg-brand-100 text-brand-700 hover:text-brand-800 px-5 py-3 text-base font-semibold transition-colors"
               >
                 Показать ещё {Math.min(LOAD_MORE_STEP, filtered.length - visibleCount)}
               </button>
@@ -219,19 +219,19 @@ export function ProvidersExplorer({ providers, initialQuery = "", initialTags = 
       {compareProviders.length >= 2 && (
         <div className="sticky bottom-4">
           <div className="mx-auto max-w-xl">
-            <div className="card border-emerald-300 bg-emerald-50 px-4 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm">
+            <div className="card border-2 border-emerald-400 bg-gradient-to-r from-emerald-50 to-emerald-100/80 px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm sm:text-base">
               <div className="space-y-1">
-                <div className="font-semibold text-emerald-800 flex items-center gap-2">
+                <div className="font-bold text-emerald-800 flex items-center gap-2">
                   ⚖️ Выбрано для сравнения: {compareProviders.length}
                 </div>
-                <div className="text-emerald-700">
+                <div className="text-emerald-700 font-medium">
                   {compareProviders.map((p) => p.name).join(" · ")}
                 </div>
               </div>
               {compareQuery && (
                 <Link
                   href={`/compare?p=${encodeURIComponent(compareQuery)}`}
-                  className="inline-flex items-center gap-1 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-3 py-2 min-h-[44px] items-center shadow-md shadow-emerald-500/30 transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2.5 min-h-[48px] items-center shadow-lg shadow-emerald-500/40 transition-colors"
                 >
                   Открыть таблицу сравнения →
                 </Link>
