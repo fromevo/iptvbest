@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: "IPTV Best — рейтинг IPTV провайдеров и платных плейлистов",
-    template: "%s — IPTV Best"
+    template: "%s"
   },
   description:
     "Актуальный рейтинг IPTV провайдеров и платных плейлистов: обзоры, сравнение, фильтры по 4K, спорту, архиву и мультируму. Помогаем выбрать лучший IPTV под ваши задачи.",
