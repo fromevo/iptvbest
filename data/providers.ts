@@ -55,7 +55,7 @@ export const providers: Provider[] = [
       "Поддержка Smart TV, приставок и мобильных приложений"
     ],
     cons: ["Интерфейс личного кабинета довольно простой по дизайну"],
-    websiteUrl: "https://iptv-top.ru/px45",
+    websiteUrl: "https://tv.team/116926",
     archiveDaysApprox: 5,
     paymentsNote: "Банковские карты, возможно криптовалюта"
   },
@@ -103,7 +103,8 @@ export const providers: Provider[] = [
       "Удобный редактор плейлистов"
     ],
     cons: ["Нет самого дешёвого тарифа на рынке"],
-    websiteUrl: "https://iptv-top.ru/p7w7",
+    websiteUrl:
+      "https://ztempz.xyz/zZS3SlCiMOdaoQYtnmDJzYctGwstY7MN_lnvj1HcFII=",
     archiveDaysApprox: 3,
     paymentsNote: "Карты, электронные кошельки"
   },
@@ -223,7 +224,7 @@ export const providers: Provider[] = [
       "Архив передач и поддержка мультирума"
     ],
     cons: ["Не самый большой выбор каналов по сравнению с ТОП-лидерами"],
-    websiteUrl: "https://iptv-top.ru/ni36",
+    websiteUrl: "https://antifriz.tv/?ref=PNOCGGu",
     archiveDaysApprox: 7,
     paymentsNote: "Банковские карты, онлайн-платежи"
   },
@@ -511,7 +512,7 @@ export const providers: Provider[] = [
       "Есть архив и дополнительные опции"
     ],
     cons: ["Мало отзывов, сложнее оценить стабильность заранее"],
-    websiteUrl: "https://iptv-top.ru/xtov",
+    websiteUrl: "https://tvlider.net/welcome/signup/9d40b6860134712c",
     archiveDaysApprox: 4,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
