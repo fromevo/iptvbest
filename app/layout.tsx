@@ -45,7 +45,9 @@ export const metadata: Metadata = {
     creator: "@iptv_best_ru"
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    google:
+      process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+      "Uchu1lobeF3UXRAkczQe3chrg4H5ZJG62f61kD3mnls",
     yandex:
       process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || "b40a3e0545edb394"
   }
