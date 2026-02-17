@@ -46,7 +46,8 @@ export const metadata: Metadata = {
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
-    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || undefined
+    yandex:
+      process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || "b40a3e0545edb394"
   }
 };
 
