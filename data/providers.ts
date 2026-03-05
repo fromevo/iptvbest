@@ -38,7 +38,7 @@ export const providers: Provider[] = [
   {
     slug: "tv-team",
     name: "TV Team",
-    position: 1,
+    position: 2,
     logoEmoji: "🏆",
     rating: 5.0,
     reviewsCount: 7,
@@ -62,7 +62,7 @@ export const providers: Provider[] = [
   {
     slug: "all-tv",
     name: "All TV",
-    position: 2,
+    position: 3,
     logoEmoji: "🌍",
     rating: 5.0,
     reviewsCount: 4,
@@ -79,14 +79,14 @@ export const providers: Provider[] = [
       "Удобная разбивка по странам и жанрам"
     ],
     cons: ["Интерфейс сайта перегружен информацией для новых пользователей"],
-    websiteUrl: "https://iptv-top.ru/rrqp",
+    websiteUrl: "http://alltv.club/p-67716",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, электронные платежи"
   },
   {
     slug: "sharavoz",
     name: "Sharavoz TV",
-    position: 3,
+    position: 4,
     logoEmoji: "💥",
     rating: 5.0,
     reviewsCount: 21,
@@ -111,7 +111,7 @@ export const providers: Provider[] = [
   {
     slug: "tvizi",
     name: "Tvizi",
-    position: 4,
+    position: 5,
     logoEmoji: "🎛️",
     rating: 4.7,
     reviewsCount: 2,
@@ -128,14 +128,14 @@ export const providers: Provider[] = [
       "Один плейлист сразу на два устройства"
     ],
     cons: ["Не все спортивные и взрослые каналы входят в базовый тариф"],
-    websiteUrl: "https://iptv-top.ru/ms37",
+    websiteUrl: "https://tvizi.net?rl=922821",
     archiveDaysApprox: 5,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
   {
     slug: "bit-tv",
     name: "Bit TV",
-    position: 5,
+    position: 6,
     logoEmoji: "🧊",
     rating: 4.7,
     reviewsCount: 2,
@@ -152,14 +152,14 @@ export const providers: Provider[] = [
       "Каналы с повышенным битрейтом и несколькими звуковыми дорожками"
     ],
     cons: ["Нет очень дешёвого стартового варианта, только общий пакет"],
-    websiteUrl: "https://iptv-top.ru/0ak6",
+    websiteUrl: "http://bittv.ltd/r/4759/",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты СНГ, электронные деньги"
   },
   {
     slug: "cbilling",
     name: "Cbilling",
-    position: 6,
+    position: 7,
     logoEmoji: "🏗️",
     rating: 4.7,
     reviewsCount: 6,
@@ -176,14 +176,14 @@ export const providers: Provider[] = [
       "Множество российских и региональных каналов"
     ],
     cons: ["Избыточный функционал, если нужен просто «домашний плейлист»"],
-    websiteUrl: "https://iptv-top.ru/cxeb",
+    websiteUrl: "https://cbillingtv.com/pl/70432",
     archiveDaysApprox: 7,
     paymentsNote: "Безналичная оплата, онлайн-платежи"
   },
   {
     slug: "crdru",
     name: "CRDRU",
-    position: 7,
+    position: 8,
     logoEmoji: "🚀",
     rating: 4.7,
     reviewsCount: 6,
@@ -200,14 +200,14 @@ export const providers: Provider[] = [
       "Частые обновления списка каналов"
     ],
     cons: ["Архив хранится не так долго, как у некоторых конкурентов"],
-    websiteUrl: "https://iptv-top.ru/bbm5",
+    websiteUrl: "https://crdtv.net/registration/1b34358ee35eb6f.htm",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
   {
     slug: "antifriz-tv",
     name: "Antifriz TV",
-    position: 8,
+    position: 9,
     logoEmoji: "❄️",
     rating: 4.7,
     reviewsCount: 3,
@@ -231,7 +231,7 @@ export const providers: Provider[] = [
   {
     slug: "iptv-online",
     name: "IPTV Online",
-    position: 9,
+    position: 10,
     logoEmoji: "🌐",
     rating: 5.0,
     reviewsCount: 5,
@@ -248,14 +248,14 @@ export const providers: Provider[] = [
       "Работает на популярных плеерах и приставках"
     ],
     cons: ["Цена VIP-тарифа выше среднего по рынку"],
-    websiteUrl: "https://iptv-top.ru/fwkc",
+    websiteUrl: "http://iptv.online/user/register?ref=544529",
     archiveDaysApprox: 5,
     paymentsNote: "Банковские карты, электронные кошельки"
   },
   {
     slug: "sharatv",
     name: "SharaTV",
-    position: 10,
+    position: 11,
     logoEmoji: "📦",
     rating: 4.3,
     reviewsCount: 3,
@@ -272,14 +272,14 @@ export const providers: Provider[] = [
       "Мультирум на три устройства"
     ],
     cons: ["Общее количество каналов ниже, чем у лидеров рейтинга"],
-    websiteUrl: "https://iptv-top.ru/a2hq",
+    websiteUrl: "https://shara-tv.org/r/105525/",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
   {
     slug: "viplime",
     name: "VipLime",
-    position: 11,
+    position: 12,
     logoEmoji: "🍋",
     rating: 4.3,
     reviewsCount: 5,
@@ -296,14 +296,14 @@ export const providers: Provider[] = [
       "Собственные сервера в разных странах"
     ],
     cons: ["Дизайн личного кабинета может показаться устаревшим"],
-    websiteUrl: "https://iptv-top.ru/ipt0",
+    websiteUrl: "http://viplime.fun/index.php?user=130209",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
   {
     slug: "iptv-best",
     name: "IpTV Best",
-    position: 12,
+    position: 1,
     logoEmoji: "✨",
     rating: 4.3,
     reviewsCount: 4,
@@ -320,7 +320,7 @@ export const providers: Provider[] = [
       "Удобная структура тематических пакетов"
     ],
     cons: ["Меньше общее количество каналов по сравнению с ТОП-1–3"],
-    websiteUrl: "https://iptv-top.ru/vhjv",
+    websiteUrl: "https://ip-tv.best?referrer_id=50597",
     archiveDaysApprox: 7,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -344,7 +344,7 @@ export const providers: Provider[] = [
       "Мультирум на два устройства"
     ],
     cons: ["Редко появляются по-настоящему новые тематические пакеты"],
-    websiteUrl: "https://iptv-top.ru/w7mz",
+    websiteUrl: "https://2tv.biz?referrer_id=20435",
     archiveDaysApprox: 5,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -368,7 +368,7 @@ export const providers: Provider[] = [
       "Есть мультирум и архив каналов"
     ],
     cons: ["Из-за большого числа каналов сложнее быстро найти нужное"],
-    websiteUrl: "https://iptv-top.ru/c9tq",
+    websiteUrl: "https://vipdrive.net/welcome/signup/9d40b6860134712c",
     archiveDaysApprox: 4,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -392,7 +392,7 @@ export const providers: Provider[] = [
       "Хорошее качество трансляции"
     ],
     cons: ["Интерфейс и сайт больше ориентированы на продвинутых пользователей"],
-    websiteUrl: "https://iptv-top.ru/q5qu",
+    websiteUrl: "http://kineskop.club/?p=MTAzNDUzOA",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -416,7 +416,7 @@ export const providers: Provider[] = [
       "Бонусная система при пополнении баланса"
     ],
     cons: ["Фокус в основном на российском контенте, минимум зарубежных каналов"],
-    websiteUrl: "https://iptv-top.ru/qcet",
+    websiteUrl: "https://smotrivip.com/?pp=70432",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -440,7 +440,7 @@ export const providers: Provider[] = [
       "Несколько вариантов подписки по длительности"
     ],
     cons: ["Рейтинг ниже среднего по сравнению с конкурентами"],
-    websiteUrl: "https://iptv-top.ru/zs33",
+    websiteUrl: "https://itv.live/?r=8bff9ab8da44de",
     archiveDaysApprox: 0,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -464,7 +464,7 @@ export const providers: Provider[] = [
       "Работает на популярных приставках и платформах"
     ],
     cons: ["Из-за масштабности сложно сориентироваться новичку"],
-    websiteUrl: "https://iptv-top.ru/io4w",
+    websiteUrl: "https://tvlider.net/welcome/signup/9d40b6860134712c",
     archiveDaysApprox: 7,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -488,7 +488,7 @@ export const providers: Provider[] = [
       "История каналов за несколько дней"
     ],
     cons: ["Рейтинг и отзывы заметно ниже, чем у лидеров топа"],
-    websiteUrl: "https://iptv-top.ru/6nb0",
+    websiteUrl: "https://ottg.tv/ref/Romango",
     archiveDaysApprox: 7,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -536,7 +536,7 @@ export const providers: Provider[] = [
       "Несколько тарифов под разные сценарии использования"
     ],
     cons: ["Рейтинг средний, встречаются разные отзывы по стабильности"],
-    websiteUrl: "https://iptv-top.ru/evnf",
+    websiteUrl: "https://snegiri.tv/",
     archiveDaysApprox: 5,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
@@ -560,7 +560,7 @@ export const providers: Provider[] = [
       "Работает на широком спектре устройств"
     ],
     cons: ["Малое количество каналов относительно конкурентов"],
-    websiteUrl: "https://iptv-top.ru/p3ju",
+    websiteUrl: "https://topiptv.ink/r.php?ref=romango",
     archiveDaysApprox: 3,
     paymentsNote: "Банковские карты, онлайн-оплата"
   },
