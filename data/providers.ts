@@ -62,7 +62,7 @@ export const providers: Provider[] = [
   {
     slug: "all-tv",
     name: "All TV",
-    position: 3,
+    position: 4,
     logoEmoji: "🌍",
     rating: 5.0,
     reviewsCount: 4,
@@ -86,7 +86,7 @@ export const providers: Provider[] = [
   {
     slug: "sharavoz",
     name: "Sharavoz TV",
-    position: 4,
+    position: 5,
     logoEmoji: "💥",
     rating: 5.0,
     reviewsCount: 21,
@@ -111,7 +111,7 @@ export const providers: Provider[] = [
   {
     slug: "tvizi",
     name: "Tvizi",
-    position: 5,
+    position: 6,
     logoEmoji: "🎛️",
     rating: 4.7,
     reviewsCount: 2,
@@ -135,7 +135,7 @@ export const providers: Provider[] = [
   {
     slug: "bit-tv",
     name: "Bit TV",
-    position: 6,
+    position: 8,
     logoEmoji: "🧊",
     rating: 4.7,
     reviewsCount: 2,
@@ -159,7 +159,7 @@ export const providers: Provider[] = [
   {
     slug: "cbilling",
     name: "Cbilling",
-    position: 7,
+    position: 9,
     logoEmoji: "🏗️",
     rating: 4.7,
     reviewsCount: 6,
@@ -183,7 +183,7 @@ export const providers: Provider[] = [
   {
     slug: "crdru",
     name: "CRDRU",
-    position: 8,
+    position: 10,
     logoEmoji: "🚀",
     rating: 4.7,
     reviewsCount: 6,
@@ -207,7 +207,7 @@ export const providers: Provider[] = [
   {
     slug: "antifriz-tv",
     name: "Antifriz TV",
-    position: 9,
+    position: 7,
     logoEmoji: "❄️",
     rating: 4.7,
     reviewsCount: 3,
@@ -231,7 +231,7 @@ export const providers: Provider[] = [
   {
     slug: "iptv-online",
     name: "IPTV Online",
-    position: 10,
+    position: 11,
     logoEmoji: "🌐",
     rating: 5.0,
     reviewsCount: 5,
@@ -255,7 +255,7 @@ export const providers: Provider[] = [
   {
     slug: "sharatv",
     name: "SharaTV",
-    position: 11,
+    position: 12,
     logoEmoji: "📦",
     rating: 4.3,
     reviewsCount: 3,
@@ -279,7 +279,7 @@ export const providers: Provider[] = [
   {
     slug: "viplime",
     name: "VipLime",
-    position: 12,
+    position: 13,
     logoEmoji: "🍋",
     rating: 4.3,
     reviewsCount: 5,
@@ -327,7 +327,7 @@ export const providers: Provider[] = [
   {
     slug: "2-tv",
     name: "2 TV",
-    position: 13,
+    position: 14,
     logoEmoji: "2️⃣",
     rating: 4.3,
     reviewsCount: 5,
@@ -351,7 +351,7 @@ export const providers: Provider[] = [
   {
     slug: "vip-drive",
     name: "Vip Drive",
-    position: 14,
+    position: 15,
     logoEmoji: "🚗",
     rating: 4.0,
     reviewsCount: 2,
@@ -375,7 +375,7 @@ export const providers: Provider[] = [
   {
     slug: "kineskop-iptv",
     name: "Кинескоп",
-    position: 15,
+    position: 3,
     logoEmoji: "🎥",
     rating: 4.0,
     reviewsCount: 3,
